@@ -1,4 +1,4 @@
-[Toolkit Skycons](http://peter-mouland.github.io/toolkit-skycons/) 
+[Toolkit Skycons](http://skyglobal.github.io/toolkit-skycons/) 
 ========================
 
 > A collection of brand approved icons for use across Sky.com
