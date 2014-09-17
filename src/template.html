@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Skycons</title>
+    <link rel="stylesheet" href="css/demo.css"/>
+    <link rel="stylesheet" href="css/colour.css"/>
+    <link rel="stylesheet" href="css/demo-skycons.css"/>
+    <link rel="stylesheet" href="assets/skycons.css"/>
+</head>
+<body>
+
+<h1>Skycons</h1>
+
+<ul class="notes">
+    <li>
+        Include <code>http://web-toolkit.global.sky.com/{{ site.version }}/fonts/skycons.css</code>
+    </li>
+    <li>
+        Ensure <code>aria-hidden</code> is used on your <code>skycon</code> tags.
+    </li>
+    <li>
+        To make the icon have a colour, add the class <code>colour</code>.
+    </li>
+    <li>
+        To make the icon have a colour on hover, add the class <code>colour-hover</code> to the parent.
+    </li>
+</ul>
+
+<table id=wiki-skycons class="icons-table">
+    <thead>
+    <tr>
+        <th>CSS Class</th>
+        <th class="demo-col">How it looks</th>
+        <th class="demo-col">with .colour</th>
+        <th class="demo-col">with .hover-colour</th>
+        <th class="demo-col">for designers</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% for (var glyphIdx = 0; glyphIdx < glyphs.length; glyphIdx++) { var glyph = glyphs[glyphIdx] %>
+    <tr ><td><%= baseClass %> <%= classPrefix %><%= glyph %></td><td class="icon"><i class="<%= baseClass %> <%= classPrefix %><%= glyph %>" aria-hidden=true></i></td><td class="icon"><i class="<%= baseClass %> <%= classPrefix %><%= glyph %> colour" aria-hidden=true></i></td><td class="icon hover-colour"><i class="<%= baseClass %> <%= classPrefix %><%= glyph %>" aria-hidden=true></i></td><td class="icon"><a href="svg/<%= glyph %>.svg" target="_new" title="Right click and 'Save as...'">view</a> </td></tr>
+    <% } %>
+    </tbody>
+</table>
+
+</body>
+</html>
