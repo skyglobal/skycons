@@ -19,5 +19,5 @@ Web toolkit depends on collaboration between developers across Sky. Contribution
 ## Building Locally
 
  * `grunt serve` : serves the project on port 3456
- * `grunt release:bower` : release the code to bower (using the version number from package.json)
+ * `grunt release:bower` : release the code to bower
  * `grunt release:gh-pages` : push the latest vsersion to gh-pages
