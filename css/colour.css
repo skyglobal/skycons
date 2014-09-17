@@ -1,0 +1,44 @@
+body {
+  /* font size overrides */ }
+  body .hover-colour:hover .skycon-sky-go, body .colour.skycon-sky-go {
+    color: #44ad3a; }
+  body .hover-colour:hover .skycon-remote-record, body .colour.skycon-remote-record {
+    color: #ed1c24; }
+  body .hover-colour:hover .skycon-never-miss, body .colour.skycon-never-miss {
+    color: #0077ae; }
+  body .hover-colour:hover .skycon-warning, body .colour.skycon-warning {
+    color: #D21717; }
+  body .hover-colour:hover .skycon-google-plus, body .colour.skycon-google-plus {
+    color: #dd4c38; }
+  body .hover-colour:hover .skycon-twitter, body .colour.skycon-twitter {
+    color: #25a8e0; }
+  body .hover-colour:hover .skycon-facebook, body .colour.skycon-facebook {
+    color: #3b5998; }
+  body .hover-colour:hover .skycon-tick, body .colour.skycon-tick {
+    color: #6dbb00; }
+  body .hover-colour:hover .skycon-chevron, body .colour.skycon-chevron {
+    color: #0070a5; }
+  body .hover-colour:hover .skycon-chevron-up, body .colour.skycon-chevron-up {
+    color: #0070a5; }
+  body .hover-colour:hover .skycon-chevron-down, body .colour.skycon-chevron-down {
+    color: #0070a5; }
+  body .hover-colour:hover .skycon-at, body .colour.skycon-at {
+    color: #0073c5; }
+  body .hover-colour:hover .skycon-cloud, body .colour.skycon-cloud {
+    color: #0073c5; }
+  body .hover-colour:hover .skycon-on-demand, body .colour.skycon-on-demand {
+    color: #0073c5; }
+  body .hover-colour:hover .skycon-sky-plus, body .colour.skycon-sky-plus {
+    color: #0073c5; }
+  body .hover-colour:hover .skycon-mouse, body .colour.skycon-mouse {
+    color: #0073c5; }
+  body .hover-colour:hover .skycon-tv, body .colour.skycon-tv {
+    color: #0073c5; }
+  body .hover-colour:hover .skycon-phone, body .colour.skycon-phone {
+    color: #0073c5; }
+  body .hover-colour:hover .skycon-edit, body .colour.skycon-edit {
+    color: #0073c5; }
+  body .hover-colour:hover .skycon-pending, body .colour.skycon-pending {
+    color: #6dbb00; }
+  body .skycon-sky, body .skycon-chevron-down, body .skycon-chevron-up, body .skycon-menu {
+    font-size: 10px; }
