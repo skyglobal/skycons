@@ -1,7 +1,7 @@
 {
-    "name": "sky-toolkit-skycons",
+    "name": "bskyb-skycons",
     "version": "0.0.1",
-    "homepage": "https://github.com/skyglobal/toolkit-skycons",
+    "homepage": "https://github.com/skyglobal/skycons",
     "authors": [
         "Peter Mouland <peter.mouland@gmail.com>"
     ],
@@ -13,6 +13,6 @@
         "!dist/**/*"
     ],
     "dependencies": {
-        "pm-toolkit-colours": "~0.0.1"
+        "bskyb-colours": "~0.0.6"
     }
 }

@@ -1,23 +1,24 @@
-[Toolkit Skycons](http://skyglobal.github.io/toolkit-skycons/) 
+[Skycons](http://skyglobal.github.io/skycons/) 
 ========================
 
 > A collection of brand approved icons for use across Sky.com
 
+See http://skyglobal.github.io/skycons/ for a demo of the Skycons
+
 ## Usage
 
-### Include CSS in your own project
+### Include Skycons in your own project
 
-`bower install --save-dev pm-toolkit-skycons`
+#### Using Bower
+
+`bower install --save-dev bskyb-skycons`
 
 ## Contribution
 
-Web toolkit depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
-
-## Contact Us
-
+BSkyB components depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
 
 ## Building Locally
 
  * `grunt serve` : serves the project on port 3456
  * `grunt release:bower` : release the code to bower
- * `grunt release:gh-pages` : push the latest vsersion to gh-pages
+ * `grunt release:gh-pages` : push the latest version to gh-pages
