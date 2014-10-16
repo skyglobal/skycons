@@ -40,5 +40,7 @@ body {
     color: #0073c5; }
   body .hover-colour:hover .skycon-pending, body .colour.skycon-pending {
     color: #6dbb00; }
+  body .hover-colour:hover .skycon-whatsapp, body .colour.skycon-whatsapp {
+    color: #34AF23; }
   body .skycon-sky, body .skycon-chevron-down, body .skycon-chevron-up, body .skycon-menu {
     font-size: 10px; }
