@@ -12,7 +12,7 @@
         "**/*",
         "!dist/**/*"
     ],
-    "dependencies": {
+    "devDependencies": {
         "bskyb-colours": "~0.0.6"
     }
 }
