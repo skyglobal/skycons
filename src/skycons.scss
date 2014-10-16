@@ -1,4 +1,5 @@
 @import 'bskyb-colours/scss/colours';
+@import 'dist/skycons';
 
 @mixin set-skycon-colour($skycon, $colour){
   .hover-colour:hover .skycon-#{$skycon} ,

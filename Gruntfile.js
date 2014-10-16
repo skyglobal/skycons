@@ -8,13 +8,14 @@ module.exports = function(grunt) {
                 dest: 'dist',
                 destCss: 'dist',
                 options: {
-                    ie7 : true,
+                    ie7 : false,
                     font : 'skycons',
                     template : 'src/template.css',
                     htmlDemoTemplate : 'src/template.html',
                     htmlDemo : true,
                     ligatures : false,
                     engine : 'node',
+                    stylesheet: 'scss',
                     destHtml : '_site',
                     hashes : false,
                     embed : true
@@ -29,6 +30,7 @@ module.exports = function(grunt) {
             copySVGsToSite: 'cp -R src/svg _site',
             copyDistToSite: 'cp -R dist/* _site/assets',
             copyCssToSite: 'cp -R demo/css _site',
+            removeUnusedScss: 'rm dist/_skycons.scss',
             'bower-install': 'bower install',
             'release-bower': 'git tag -a v<%= pkg.version %> -m "release v<%= pkg.version %> for bower"; git push origin master v<%= pkg.version %>',
             'gh-pages': 'gulp gh-pages'
@@ -51,7 +53,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    '_site/css/colour.css': 'src/colour.scss'
+                    'dist/skycons.scss': 'src/skycons.scss',
+                    'dist/skycons.css': 'src/skycons.scss'
                 }
             }
         }
@@ -66,11 +69,12 @@ module.exports = function(grunt) {
         'exec:createSite',
         'exec:bower-install',
         'webfont',
+        'sass',
+        'exec:removeUnusedScss',
         'exec:renameIndexHtml',
         'exec:copySVGsToSite',
         'exec:copyDistToSite',
-        'exec:copyCssToSite',
-        'sass'
+        'exec:copyCssToSite'
     ]);
 
     grunt.registerTask('release:gh-pages', [

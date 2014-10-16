@@ -1,6 +1,6 @@
 {
   "name": "bskyb-skycons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Icons for Sky",
   "main": "index.js",
   "devDependencies": {
