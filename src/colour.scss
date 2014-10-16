@@ -1,4 +1,4 @@
-@import 'pm-toolkit-colours/scss/colours';
+@import 'bskyb-colours/scss/colours';
 
 @mixin set-skycon-colour($skycon, $colour){
   .hover-colour:hover .skycon-#{$skycon} ,
