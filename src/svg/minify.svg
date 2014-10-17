@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-<rect x="7" fill="#FAFAFA" width="2" height="9"/>
-<rect y="7" fill="#FAFAFA" width="9" height="2"/>
-<rect x="3.247" y="-0.503" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 9.8504 4.0805)" fill="#FAFAFA" width="1.666" height="9.167"/>
-<rect x="11" y="11" fill="#FAFAFA" width="2" height="9"/>
-<rect x="11" y="11" fill="#FAFAFA" width="9" height="2"/>
-<rect x="15.087" y="11.336" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.5942 15.9199)" fill="#FAFAFA" width="1.666" height="9.168"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#FAFAFA" d="M7 0h2v9H7zM0 7h9v2H0zM7.91 6.732L6.732 7.91.25 1.428 1.428.25zM11 11h2v9h-2zM11 11h9v2h-9zM12.09 13.268l1.178-1.178 6.482 6.482-1.178 1.178z"/></svg>
