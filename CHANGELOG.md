@@ -5,14 +5,14 @@
   * Fixed Google+ icon
   * Fixed minify icon
   
-## 0.0.3
+## 0.0.4
 
   * Added scss into bower distributable
   
-## 0.0.2
+## 0.0.4
 
   * Added WhatsApp Icon (with colour)
   
-## 0.0.1
+## 0.0.4
 
   * Created

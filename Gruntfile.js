@@ -57,6 +57,52 @@ module.exports = function(grunt) {
                     'dist/skycons.css': 'src/skycons.scss'
                 }
             }
+        },
+        aws_s3: {
+            options: {
+                accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+                secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+                region: 'eu-west-1',
+                uploadConcurrency: 5, // 5 simultaneous uploads
+                downloadConcurrency: 5 // 5 simultaneous downloads
+            },
+            release: {
+                options: {
+                    bucket: process.env.AWS_SKYGLOBAL_BUCKET,
+                    differential: false // Only uploads the files that have changed
+                },
+                files: [
+                    {dest: 'components/<%= pkg.name %>/<%= pkg.version %>/', src: ['**'], cwd: 'dist', expand:true }
+                ]
+            }
+        },
+        version_sync: {
+            app: {
+                source: './package.json',
+                targets: ['./bower.json']
+            }
+        },
+        replace: {
+            html: {
+                src: ['_site/*.html'],
+                overwrite: true,                 // overwrite matched source files
+                replacements: [{
+                    from: "{{ site.time }}",
+                    to: "<%= grunt.template.today('dd/mm/yyyy') %>"
+                },
+                {
+                    from: "{{ site.version }}",
+                    to: "<%= pkg.version %>"
+                }]
+            },
+            markdown: {
+                src: ['*.md'],
+                overwrite: true,                 // overwrite matched source files
+                replacements: [{
+                    from:  /\/[0-9]{1,2}\.[0-9]{1,2}\.[0-9]{1,2}\//g,
+                    to: "/<%= pkg.version %>/"
+                }]
+            }
         }
     });
 
@@ -64,8 +110,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-aws-s3');
+    grunt.loadNpmTasks('grunt-version-sync');
+    grunt.loadNpmTasks('grunt-text-replace');
 
     grunt.registerTask('build', [
+        'version_sync',
         'exec:createSite',
         'exec:bower-install',
         'webfont',
@@ -74,9 +124,12 @@ module.exports = function(grunt) {
         'exec:renameIndexHtml',
         'exec:copySVGsToSite',
         'exec:copyDistToSite',
-        'exec:copyCssToSite'
+        'exec:copyCssToSite',
+        'replace'
     ]);
 
+    //before you can release gh-pages you must:
+    //read here to init gh-pages properly https://www.npmjs.org/package/gulp-gh-pages
     grunt.registerTask('release:gh-pages', [
         'build',
         'exec:gh-pages'
@@ -84,10 +137,15 @@ module.exports = function(grunt) {
 
 
     //before you can release bower you must:
-    //bower register example git://github.com/user/example.git
+    //bower register bskyb-component-name git://github.com/skyglobal/component-name.git
     grunt.registerTask('release:bower', [
         'build',
         'exec:release-bower'
+    ]);
+
+    grunt.registerTask('release:cdn', [
+        'build',
+        'aws_s3'
     ]);
 
     grunt.registerTask('serve', [

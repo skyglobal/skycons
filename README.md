@@ -7,9 +7,11 @@ See http://skyglobal.github.io/skycons/ for a demo of the Skycons
 
 ## Usage
 
-### Include Skycons in your own project
+### Using CDN
 
-#### Using Bower
+&lt;link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.0.4/skycons.css"/>
+
+### Using Bower
 
 `bower install --save-dev bskyb-skycons`
 
@@ -18,3 +20,12 @@ See http://skyglobal.github.io/skycons/ for a demo of the Skycons
 BSkyB components depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
 
 [Read More >](CONTRIBUTING.md)
+
+## Browser Support
+
+ * IE8 +
+ * Safari 5 +
+ * Latest Firefox
+ * Latest Chrome
+ * Latest Mobile Safari
+ * Latest Mobile Chrome

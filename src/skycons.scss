@@ -32,7 +32,6 @@ body {
   @include set-skycon-colour('pending', $success-icon);
   @include set-skycon-colour('whatsapp', #34AF23);
 
-  /* font size overrides */
   .skycon-sky,
   .skycon-chevron-down,
   .skycon-chevron-up,
