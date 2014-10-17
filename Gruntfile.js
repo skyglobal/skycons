@@ -60,6 +60,7 @@ module.exports = function(grunt) {
         },
         aws_s3: {
             options: {
+                bucket: process.env.AWS_SKYGLOBAL_BUCKET,
                 accessKeyId: process.env.AWS_ACCESS_KEY_ID,
                 secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
                 region: 'eu-west-1',
@@ -68,8 +69,10 @@ module.exports = function(grunt) {
             },
             release: {
                 options: {
-                    bucket: process.env.AWS_SKYGLOBAL_BUCKET,
-                    differential: false // Only uploads the files that have changed
+                    differential: true, // Only uploads the files that have changed,
+                    params: {
+                        CacheControl: 'public, max-age=2592000'
+                    }
                 },
                 files: [
                     {dest: 'components/<%= pkg.name %>/<%= pkg.version %>/', src: ['**'], cwd: 'dist', expand:true }
