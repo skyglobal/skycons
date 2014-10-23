@@ -7,13 +7,17 @@ See http://skyglobal.github.io/skycons/ for a demo of the Skycons
 
 ## Usage
 
-### Using CDN
+### As CSS
 
 http://web-toolkit.global.sky.com/components/skycons/0.0.4/skycons.css
 
-### Using Bower
+### As a Sass Module
 
 `bower install --save-dev bskyb-skycons`
+
+### Locally
+
+`gulp serve`
 
 ## Contribution
 

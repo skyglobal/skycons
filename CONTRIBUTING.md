@@ -35,6 +35,7 @@ To build the toolkit locally, you'll need to install:
 If you would like the feature to go live sooner, mention this in the comments/commit. We will provide a temporary live url that will allow you to carry on without getting blocked.
 
 ## Running Locally
+
  * `grunt serve` :  Run Jekyll on port 3456
  
 ## Releasing (admin only)
@@ -42,4 +43,4 @@ If you would like the feature to go live sooner, mention this in the comments/co
  * Update [package.json](package.json) version number appropriately
  * `grunt release:gh-pages` : push the latest version to gh-pages
  * `grunt release:bower` : release the code to bower
- * `grunt release:cdn` : push the latest version to gh-pages
+ * `grunt release:cdn` : push the latest version to Akamai
