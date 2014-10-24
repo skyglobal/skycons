@@ -5,8 +5,8 @@ module.exports = function(grunt) {
         webfont: {
             all: {
                 src: 'src/svg/*.svg',
-                dest: 'dist',
-                destCss: 'dist',
+                dest: '_site/assets',
+                destCss: '_site/assets',
                 options: {
                     ie7 : false,
                     font : 'skycons',
@@ -53,8 +53,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/skycons.scss': 'src/skycons.scss',
-                    'dist/skycons.css': 'src/skycons.scss'
+                    'dist/skycons.scss': 'src/scss/skycons.scss',
+                    'dist/skycons.css': 'src/scss/skycons.scss'
                 }
             }
         },

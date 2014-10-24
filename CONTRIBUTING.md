@@ -7,11 +7,9 @@ We encourage small change pull requests, the smaller the change the quicker and 
 ## Dependencies
 
 To build the toolkit locally, you'll need to install:
- * [ruby](https://www.ruby-lang.org/) (version 0.0.4 or later),
  * [node.js](http://nodejs.org),
  * [Gulp](http://gulpjs.com),
  * [Grunt](http://gruntjs.com/),
- * [Jekyll](http://jekyllrb.com/)
 
 
 ## Workflow
@@ -36,11 +34,11 @@ If you would like the feature to go live sooner, mention this in the comments/co
 
 ## Running Locally
 
- * `grunt serve` :  Run Jekyll on port 3456
+ * `gulp serve` :  Run Jekyll on port 3456
  
 ## Releasing (admin only)
 
  * Update [package.json](package.json) version number appropriately
- * `grunt release:gh-pages` : push the latest version to gh-pages
- * `grunt release:bower` : release the code to bower
- * `grunt release:cdn` : push the latest version to Akamai
+ * `gulp release:gh-pages` : push the latest version to gh-pages
+ * `gulp release:bower` : release the code to bower
+ * `gulp release:cdn` : push the latest version to Akamai
