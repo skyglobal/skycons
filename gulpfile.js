@@ -11,9 +11,11 @@ var run = require("gulp-run");
 var runSequence = require('run-sequence');
 var pkg = require('./package.json');
 
-var rename = require("gulp-rename");
-var del = require('del');
 var flatten = require('gulp-flatten');
+
+var iconfontCSS = require("gulp-iconfont-css")
+    , iconfont = require("gulp-iconfont")
+    , path = require("path");
 
 var paths= {
     "demo": [
@@ -26,6 +28,15 @@ var paths= {
     siteAssets: './_site/assets'
 };
 
+paths.sources ={
+    icons: './src/svg/*.svg',
+    fontStylesheet: './src/gulp.scss'
+};
+paths.dist = {
+    fonts: './_site/icons',
+    stylesheets: './_site/icons',
+    fontStylesheet: 'icons.scss'
+};
 paths.sass = paths.siteAssets; //fonts are special!
 
 gulp.task('sass', function() {
@@ -72,11 +83,6 @@ gulp.task('create-site', function() {
         .pipe(gulp.dest('_site'))
 });
 
-gulp.task('create-site', function(cb) {
-    return run('grunt webfont').exec('', function(){
-        return runSequence(['rename-font-files']);
-    });
-});
 
 gulp.task('create-bower-dist', function() {
     gulp.src([paths.css + '/skycons.css'])
@@ -88,24 +94,11 @@ gulp.task('create-bower-dist', function() {
 
 });
 
-gulp.task('clean', function() {
-    return del([paths.siteAssets + '/_skycons.scss','./_site/skycons.html', paths.css + '/skycons.css']);
-});
-
 gulp.task('copy-svg', function() {
     return gulp.src(['./src/svg/*.svg'])
         .pipe(gulp.dest('./_site/svg/'));
 });
 
-gulp.task('rename-font-files', function() {
-    gulp.src([paths.siteAssets + '/_skycons.scss'])
-        .pipe(rename("skycons.scss"))
-        .pipe(gulp.dest(paths.siteAssets));
-
-    return gulp.src(['./_site/skycons.html'])
-        .pipe(rename("index.html"))
-        .pipe(gulp.dest('./_site'));
-});
 
 
 gulp.task('build', function(cb) {
@@ -135,5 +128,44 @@ gulp.task('release:gh-pages', function(cb) {
         'build',
         'gh-pages',
         cb
+    );
+});
+
+
+
+gulp.task("icons", function(){
+    gulp.src(paths.sources.icons)
+        .pipe(iconfontCSS({
+            fontName : "skycons",
+            path : paths.sources.fontStylesheet,
+            targetPath : paths.dist.fontStylesheet,
+            fontPath : ""
+        }))
+        .pipe(iconfont({
+            fontName : "skycons",
+            fixedWidth : false,
+            normalize: true,
+            centerHorizontally: true
+        }))
+        .pipe(gulp.dest(paths.dist.fonts));
+});
+gulp.task('icons-sass', function(){
+
+    return gulp.src(['./_site/icons/**/*.scss',paths['demoSass'] + '/**/*.scss'])
+        .pipe(sass({
+            includePaths: ['bower_components','_site'],
+            outputStyle: 'nested'
+        }))
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('./_site/icons/'))
+        .pipe(browserSync.reload({stream:true}));
+
+});
+
+gulp.task('skycons', function(callback) {
+    return runSequence(
+        'icons',
+        ['icons-sass'],
+        callback
     );
 });

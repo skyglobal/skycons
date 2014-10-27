@@ -21,9 +21,12 @@
     "gulp-concat": "^2.4.1",
     "gulp-flatten": "0.0.4",
     "gulp-gh-pages": "^0.3.4",
+    "gulp-iconfont": "^0.2.1",
+    "gulp-iconfont-css": "0.0.9",
     "gulp-rename": "^1.2.0",
     "gulp-run": "^1.6.4",
     "gulp-sass": "^1.2.0",
+    "path": "^0.4.9",
     "run-sequence": "^1.0.1"
   },
   "repository": {
