@@ -40,7 +40,7 @@ module.exports = function(grunt) {
             copySVGsToSite: 'cp -R src/svg _site',
             copyDistToSite: 'cp -R dist/* _site/assets',
             copyCssToSite: 'cp -R demo/css _site',
-            removeUnusedScss: 'rm dist/*.scss',
+            removeUnusedScss: 'rm dist/_*.scss',
             'bower-install': 'bower install',
             'release-bower': 'git tag -a v<%= pkg.version %> -m "release v<%= pkg.version %> for bower"; git push origin master v<%= pkg.version %>',
             'gh-pages': 'gulp gh-pages'
