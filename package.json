@@ -1,7 +1,7 @@
 {
-  "name": "skycons",
+  "name": "skycons-masthead",
   "version": "0.0.4",
-  "description": "Icons for Sky",
+  "description": "Icons for Sky Masthead",
   "main": "index.js",
   "devDependencies": {
     "grunt": "^0.4.5",

@@ -1,9 +1,10 @@
 {
-    "name": "bskyb-skycons",
+    "name": "bskyb-skycons-masthead",
     "version": "0.0.4",
     "homepage": "https://github.com/skyglobal/skycons",
     "authors": [
-        "Peter Mouland <peter.mouland@gmail.com>"
+        "Peter Mouland <peter.mouland@gmail.com>",
+        "Ben Fletcher <bjfletcher@gmail.com>"
     ],
     "description": "A collection of brand approved icons for use across Sky.com",
     "main": "dist",

@@ -4,12 +4,22 @@ module.exports = function(grunt) {
 
         webfont: {
             all: {
-                src: 'src/svg/*.svg',
+                src: [
+                  'src/svg/mail.svg',
+                  'src/svg/profile.svg',
+                  'src/svg/menu.svg',
+                  'src/svg/chevron.svg',
+                  'src/svg/chevron-down.svg',
+                  'src/svg/chevron-up.svg',
+                  'src/svg/search.svg',
+                  'src/svg/facebook.svg',
+                  'src/svg/twitter.svg'
+                ],
                 dest: 'dist',
                 destCss: 'dist',
                 options: {
                     ie7 : false,
-                    font : 'skycons',
+                    font : 'skycons-masthead',
                     template : 'src/template.css',
                     htmlDemoTemplate : 'src/template.html',
                     htmlDemo : true,
@@ -26,11 +36,11 @@ module.exports = function(grunt) {
         //Grunt-webfont outputs skycons.html so this needs to be renamed to be served by broccoli
         exec:{
             createSite: 'rm -rf _site; mkdir -p -- _site;mkdir -p -- _site/assets',
-            renameIndexHtml: 'mv _site/skycons.html _site/index.html',
+            renameIndexHtml: 'mv _site/skycons-masthead.html _site/index.html',
             copySVGsToSite: 'cp -R src/svg _site',
             copyDistToSite: 'cp -R dist/* _site/assets',
             copyCssToSite: 'cp -R demo/css _site',
-            removeUnusedScss: 'rm dist/_skycons.scss',
+            removeUnusedScss: 'rm dist/*.scss',
             'bower-install': 'bower install',
             'release-bower': 'git tag -a v<%= pkg.version %> -m "release v<%= pkg.version %> for bower"; git push origin master v<%= pkg.version %>',
             'gh-pages': 'gulp gh-pages'
@@ -53,8 +63,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/skycons.scss': 'src/skycons.scss',
-                    'dist/skycons.css': 'src/skycons.scss'
+                    'dist/skycons-masthead.scss': 'src/skycons.scss',
+                    'dist/skycons-masthead.css': 'src/skycons.scss'
                 }
             }
         },
