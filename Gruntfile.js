@@ -6,7 +6,7 @@ module.exports = function(grunt) {
             all: {
                 src: [
                   'src/svg/mail.svg',
-                  'src/svg/profile.svg',
+                  'src/svg/user-profile.svg',
                   'src/svg/menu.svg',
                   'src/svg/chevron.svg',
                   'src/svg/chevron-down.svg',
