@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.0.5
+
+  * bower structure changed
+  * Fixed warning icon
+  
 ## 0.0.4
 
   * Fixed Google+ icon
