@@ -5,7 +5,7 @@
   src: url('../fonts/skycons.eot?#iefix') format('eot'), url('../fonts/skycons.woff') format('woff'), url('../fonts/skycons.ttf') format('truetype'), url('../fonts/skycons.svg#skycons') format('svg'); }
 
 [class^="skycon-"] {
-  color: #666666;
+  color: #333;
   font-size: 16px;
   line-height: 1.125em; }
 
