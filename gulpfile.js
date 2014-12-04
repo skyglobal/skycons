@@ -11,7 +11,6 @@ var run = require("gulp-run");
 var runSequence = require('run-sequence');
 var pkg = require('./package.json');
 var flatten = require('gulp-flatten');
-var clean = require('gulp-clean');
 
 var paths = {
     "site": {
@@ -181,7 +180,7 @@ gulp.task("skycons", function(){
             var options = {
                 glyphs: codepoints,
                 fontName: fontName,
-                fontPath: '../fonts/' // set path to font (from your CSS file if relative)
+                fontPath: '../fonts/'
             };
             // Create CSS
             gulp.src(paths.source.fontSassTemplate)
@@ -204,8 +203,7 @@ gulp.task('pre-build', function(cb){
 
 
 var iconfont = require("gulp-iconfont")
-    , consolidate = require('gulp-consolidate')
-    , path = require("path");
+    , consolidate = require('gulp-consolidate');
 
 paths.source.fontSassTemplate = paths.source.root + '/main.scss';
 paths.source.fontHtmlTemplate = paths.source.root + '/index.html';
