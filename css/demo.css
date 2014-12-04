@@ -1,14 +1,36 @@
 .demo {
   margin-bottom: 40px;
-  clear: both;
-}
-.example{
-  clear: both;
-}
-.white{
-  color: white;
-}
+  clear: both; }
+
+.example {
+  clear: both; }
+
+.white {
+  color: white; }
 
 .cushioned {
-  padding: 12%;
-}
+  padding: 12%; }
+
+.icons-table tr i {
+  line-height: 1.2em;
+  cursor: pointer; }
+
+.icons-table tr:hover {
+  background: #eee; }
+
+.icons-table tr:hover i[class*="skycon-"] {
+  -webkit-transform: scale(5);
+  -ms-transform: scale(5);
+      transform: scale(5);
+  overflow: visible;
+  background: white; }
+
+.icons-table td, .icons-table th {
+  text-align: left; }
+
+.icons-table th.demo-col {
+  text-align: center;
+  width: 140px; }
+
+.icons-table th.icon, .icons-table td.icon {
+  text-align: center; }
