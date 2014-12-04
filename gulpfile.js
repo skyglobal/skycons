@@ -10,7 +10,7 @@ var concat = require('gulp-concat');
 var run = require("gulp-run");
 var runSequence = require('run-sequence');
 var pkg = require('./package.json');
-var flatten = require('gulp-flatten');
+var aws_s3 = require('gulp-aws-s3').setup({bucket: process.env.AWS_SKYGLOBAL_BUCKET});
 
 var paths = {
     "site": {
@@ -105,6 +105,19 @@ gulp.task('create-bower-dist', function() {
 
 });
 
+function awsUpload(fileType){
+    var path = 'components/' + pkg.name.replace('bskyb-','') + '/' + pkg.version + '/' + fileType + '/';
+    return gulp.src(paths.dist[fileType] + '/**/*')
+        .pipe(aws_s3.upload({ path: path } ));
+
+}
+gulp.task('aws', function() {
+    awsUpload('css');
+    awsUpload('js');
+    awsUpload('fonts');
+    awsUpload('icons');
+});
+
 gulp.task('watch', function() {
     gulp.watch(paths.site['root'], ['create-site']);
     gulp.watch([paths.source['sass'] + '/**/*',paths.demo['sass']], ['sass']);
@@ -144,6 +157,14 @@ gulp.task('release:gh-pages', function(cb) {
     return runSequence(
         'build',
         'gh-pages',
+        cb
+    );
+});
+
+gulp.task('release:cdn', function(cb) {
+    return runSequence(
+        'build',
+        'aws',
         cb
     );
 });
