@@ -16,7 +16,7 @@
 /*<%= fontPath %>*/
 @font-face {
   font-family: "<%= fontName %>";
-  src: url('.<%= fontName %>.eot');
+  src: url('<%= fontPath %><%= fontName %>.eot');
   src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
   url('<%= fontPath %><%= fontName %>.woff') format('woff'),
   url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
@@ -50,8 +50,8 @@
 
 
 <% _.each(glyphs, function(glyph) { %>
-.skycon-<%= glyph.fileName %>:before{
-  content: "\<%= glyph.codePoint %>";
+.skycon-<%= glyph.name %>:before{
+  content: "\<%= glyph.codepoint.toString(16).toUpperCase() %>";
 }
 <% }) %>
 

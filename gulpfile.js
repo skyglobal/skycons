@@ -56,7 +56,8 @@ gulp.task('sass', function() {
     browserSync.notify('<span style="color: grey">Running:</span> Sass compiling');
     return gulp.src([
             paths.source['sass'] + '/**/*.scss',
-            paths.demo['sass'] + '/**/*.scss'])
+            paths.demo['sass'] + '/**/*.scss',
+            paths.site['sass'] + '/**/*.scss'])
         .pipe(sass({
             includePaths: ['bower_components'],
             outputStyle: 'nested'
@@ -167,92 +168,34 @@ gulp.task('copy-icons', function() {
 });
 
 
-gulp.task("icons-fonts", function(){
+gulp.task("skycons", function(){
+    var fontName = 'skycons';
     return gulp.src(paths.source.icons + '/**/*.svg')
         .pipe(iconfont({
-            fontName : "skycons",
+            fontName : fontName,
             fixedWidth : false,
             normalize: true,
             centerHorizontally: true
         }))
+        .on('codepoints', function(codepoints) {
+            var options = {
+                glyphs: codepoints,
+                fontName: fontName,
+                fontPath: '../fonts/' // set path to font (from your CSS file if relative)
+            };
+            // Create CSS
+            gulp.src(paths.source.fontSassTemplate)
+                .pipe(consolidate('lodash',  options))
+                .pipe(gulp.dest(paths.site['sass']));
+
+            // Create HTML preview
+            gulp.src(paths.source.fontHtmlTemplate)
+                .pipe(consolidate('lodash', options))
+                .pipe(gulp.dest(paths.site['root']));
+        })
         .pipe(gulp.dest(paths.site['fonts']));
 });
 
-gulp.task("icons-css", function(){
-    return gulp.src(paths.source.icons + '/**/*.svg')
-        .pipe(iconfontCSS({
-            fontName : "skycons",
-            path : paths.source.fontSassTemplate,
-            targetPath : paths.site.fontSassTemplate,
-            fontPath : "../fonts/"
-        }))
-        .pipe(iconfont({
-            fontName : "skycons",
-            fixedWidth : false,
-            normalize: true,
-            centerHorizontally: true
-        }))
-        .pipe(gulp.dest(paths.site['root']));
-});
-
-gulp.task("icons-html", function(){
-    return gulp.src(paths.source.icons + '/**/*.svg')
-        .pipe(iconfontCSS({
-            fontName : "skycons",
-            path : paths.source.fontHtmlTemplate,
-            targetPath : paths.site.fontHtmlTemplate,
-            fontPath : "../fonts/"
-        }))
-        .pipe(iconfont({
-            fontName : "skycons",
-            fixedWidth : false,
-            normalize: true,
-            centerHorizontally: true
-        }))
-        .pipe(gulp.dest(paths.site['root']));
-});
-
-gulp.task("icons-clean", function(){
-    return gulp.src([
-            paths.site['root'] + '/*.eot',
-            paths.site['root'] + '/*.svg',
-            paths.site['root'] + '/*.ttf',
-            paths.site['root'] + '/*.woff'
-    ], {read: false})
-        .pipe(clean());
-});
-
-gulp.task('icons-sass', function(){
-
-    return gulp.src([
-        paths.site['icons'] + '/**/*.scss',
-        paths.site['sass'] + '/**/*.scss',
-        paths.demo['sass'] + '/**/*.scss'
-        ])
-        .pipe(sass({
-            includePaths: ['bower_components','_site'],
-            outputStyle: 'nested'
-        }))
-        .pipe(autoprefixer())
-        .pipe(gulp.dest(paths.site['css']))
-        .pipe(browserSync.reload({stream:true}));
-
-});
-
-gulp.task("skycons", function(callback){
-    return runSequence(
-        'icons-fonts',
-        'icons-css',
-        'icons-html',
-        'icons-sass',
-        'icons-clean',
-        callback
-    );
-});
-
-gulp.task('sass', function() {
-    //
-});
 
 gulp.task('pre-build', function(cb){
     return runSequence('copy-icons','skycons', cb);
@@ -260,12 +203,10 @@ gulp.task('pre-build', function(cb){
 
 
 
-var iconfontCSS = require("./node_forks/gulp-iconfont-css")
-    , iconfont = require("gulp-iconfont")
+var iconfont = require("gulp-iconfont")
+    , consolidate = require('gulp-consolidate')
     , path = require("path");
 
-paths.source.fontSassTemplate = paths.source.root + '/sass-template.scss';
-paths.source.fontHtmlTemplate = paths.source.root + '/html-template.html';
-paths.site.fontSassTemplate = 'scss/main.scss';
-paths.site.fontHtmlTemplate = 'index.html';
+paths.source.fontSassTemplate = paths.source.root + '/main.scss';
+paths.source.fontHtmlTemplate = paths.source.root + '/index.html';
 
