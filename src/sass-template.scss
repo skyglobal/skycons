@@ -16,7 +16,7 @@
 /*<%= fontPath %>*/
 @font-face {
   font-family: "<%= fontName %>";
-  src: url('<%= fontName %>.eot');
+  src: url('.<%= fontName %>.eot');
   src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
   url('<%= fontPath %><%= fontName %>.woff') format('woff'),
   url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Icons</title>
+
+    <link rel="stylesheet" href="_icons.css"/>
+</head>
+<body>
+
+<h1>Icons</h1>
+
+<table id=wiki-skycons class="icons-table">
+    <thead>
+    <tr>
+        <th>CSS Class</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% _.each(glyphs, function(glyph) { %>
+    <tr>
+        <td>.icon-<%= glyph.fileName %></td>
+        <td><span class="icon icon-<%= glyph.fileName %>"></span> </td>
+    </tr>
+    <% }); %>
+    </tbody>
+</table>
+</body>
+</html>
