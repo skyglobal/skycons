@@ -134,6 +134,13 @@ function gulpTasks(globalGulp, globalPkg){
     });
 
 
+    /*
+     * Common Gulp tasks
+     */
+    gulp.task('init', function(callback) {
+        return gulp.src('component-structure/**/*')
+            .pipe(gulp.dest('./'));
+    });
 
     gulp.task('serve', function(callback) {
         return runSequence(
