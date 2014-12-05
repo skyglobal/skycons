@@ -22,7 +22,7 @@ var paths = skyComponentHelper.paths;
 
 Once the above is complete should have the conventional directory structure as well as the useful gulp tasks.
 
-## Generated Directory Structure
+### Generated Directory Structure
 
     $ component
     ├── _site           => Generated / Compiled demo site
