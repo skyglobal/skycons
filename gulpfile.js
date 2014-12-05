@@ -2,15 +2,9 @@
 
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
-var deploy = require("gulp-gh-pages");
-var bower = require('gulp-bower');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var run = require("gulp-run");
 var runSequence = require('run-sequence');
 var pkg = require('./package.json');
-var aws_s3 = require('gulp-aws-s3').setup({bucket: process.env.AWS_SKYGLOBAL_BUCKET});
+var plugins = require('gulp-load-plugins')();
 
 var paths = {
     "site": {
@@ -57,22 +51,22 @@ gulp.task('sass', function() {
             paths.source['sass'] + '/**/*.scss',
             paths.demo['sass'] + '/**/*.scss',
             paths.site['sass'] + '/**/*.scss'])
-        .pipe(sass({
+        .pipe(plugins.sass({
             includePaths: ['bower_components'],
             outputStyle: 'nested'
         }))
-        .pipe(autoprefixer())
+        .pipe(plugins.autoprefixer())
         .pipe(gulp.dest(paths.site['css']))
         .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('bower', function() {
-    return bower()
+    return plugins.bower()
 });
 
 gulp.task('gh-pages', function () {
     gulp.src(paths.site['root'] + "/**/*")
-        .pipe(deploy({
+        .pipe(plugins.deploy({
             cacheDir: '.tmp'
         })).pipe(gulp.dest('/tmp/gh-pages'));
 });
@@ -80,7 +74,7 @@ gulp.task('gh-pages', function () {
 
 
 gulp.task('run-release-bower', function(cb) {
-    run('git tag -a v'+ pkg.version +' -m "release v' + pkg.version +' for bower"; git push origin master v'+ pkg.version).exec();
+    plugins.run('git tag -a v'+ pkg.version +' -m "release v' + pkg.version +' for bower"; git push origin master v'+ pkg.version).exec();
 });
 
 gulp.task('browserSync', function() {
@@ -105,17 +99,18 @@ gulp.task('create-bower-dist', function() {
 
 });
 
-function awsUpload(fileType){
+function awsUpload(fileType, awsS3){
     var path = 'components/' + pkg.name.replace('bskyb-','') + '/' + pkg.version + '/' + fileType + '/';
     return gulp.src(paths.dist[fileType] + '/**/*')
-        .pipe(aws_s3.upload({ path: path } ));
+        .pipe(awsS3.upload({ path: path } ));
 
 }
 gulp.task('aws', function() {
-    awsUpload('css');
-    awsUpload('js');
-    awsUpload('fonts');
-    awsUpload('icons');
+    var awsS3 = plugins.awsS3.setup({bucket: process.env.AWS_SKYGLOBAL_BUCKET});
+    awsUpload('css',awsS3);
+    awsUpload('js', awsS3);
+    awsUpload('fonts', awsS3);
+    awsUpload('icons', awsS3);
 });
 
 gulp.task('watch', function() {
@@ -126,16 +121,49 @@ gulp.task('watch', function() {
 gulp.task('create-site', function() {
     gulp.src([paths.demo['root'] + '/index.html',
             paths.demo['root'] +'/_includes/*.html'])
-        .pipe(concat('index.html'))
+        .pipe(plugins.concat('index.html'))
         .pipe(gulp.dest(paths.site['root']));
 });
 
 
 gulp.task('build', function(cb) {
-    return runSequence('pre-build', ['create-site','bower'],['sass'], 'create-bower-dist',
+    return runSequence('clean', 'pre-build', ['create-site','bower'], ['update-docs-version', 'sass'],
         cb
     );
 });
+
+//remove temporary directors
+gulp.task('clean', function(cb) {
+    return gulp.src([
+            './.tmp',
+            paths.site['root'],
+            paths.dist['root']
+        ])
+        .pipe(plugins.clean());
+});
+
+//update the version number used within all documentation and html
+gulp.task('update-docs-version-within-md', function(){
+    var now = Date().split(' ').splice(0,5).join(' ');
+    return gulp.src(['README.md'], { base : './' })
+        .pipe(plugins.replace(/[0-9]+\.[0-9]+\.[0-9]/g, pkg.version))
+        .pipe(plugins.replace(/{{ site.version }}/g, pkg.version))
+        .pipe(plugins.replace(/{{ site.time }}/g, now))
+        .pipe(gulp.dest('./'));
+});
+gulp.task('update-docs-version-within-site', function(){
+    var now = Date().split(' ').splice(0,5).join(' ');
+    return gulp.src([paths.site['root'] + '/**/*.html'], { base : './'})
+        .pipe(plugins.replace(/[0-9]+\.[0-9]+\.[0-9]/g, pkg.version))
+        .pipe(plugins.replace(/{{ site.version }}/g, pkg.version))
+        .pipe(plugins.replace(/{{ site.time }}/g, now))
+        .pipe(gulp.dest('./'));
+});
+gulp.task('update-docs-version', function(cb){
+    return runSequence(['update-docs-version-within-site', 'update-docs-version-within-md'],cb);
+});
+
+
 
 gulp.task('serve', function(callback) {
     return runSequence(
@@ -148,6 +176,7 @@ gulp.task('serve', function(callback) {
 gulp.task('release:bower', function(cb) {
     return runSequence(
         'build',
+        'create-bower-dist',
         'run-release-bower',
         cb
     );
@@ -164,6 +193,7 @@ gulp.task('release:gh-pages', function(cb) {
 gulp.task('release:cdn', function(cb) {
     return runSequence(
         'build',
+        'create-bower-dist',
         'aws',
         cb
     );
