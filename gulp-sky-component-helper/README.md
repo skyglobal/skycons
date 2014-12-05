@@ -3,7 +3,7 @@ Gulp Sky Component Helper
 
 > A `Sky Component` is self-contained functionality, that can be re-used in many web projects i.e. a Carousel.
 
-> This helper is collection of common gulp tasks used to create and deploy Sky Components.
+> This helper used to create and deploy Sky Components via Gulp tasks.
 
 ## Creating a Component
  
