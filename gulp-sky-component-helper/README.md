@@ -1,40 +1,54 @@
 Gulp Sky Component Helper 
 ========================
 
-> A collection of common gulp tasks used to build + deploy Sky Components
+> A `Sky Component` is self-contained functionality, that can be re-used in many web projects i.e. a Carousel.
 
-## Usage
+> This helper is collection of common gulp tasks used to create and deploy Sky Components.
 
-### Setup
+## Getting Started
  
-#### Install the helper
-
-`npm install --save-dev gulp-sky-component-helper`
-
-#### Create a gulpfile.js
-
-To gain access to the default gulp tasks, include the following at the top of your `gulpfile.js`:
-
+1. Intialise github repo and clone locally
+2. Create a `package.json` (for [node](https://www.npmjs.org/doc/files/package.json.html))
+2. Install the helper using `npm install --save-dev gulp-sky-component-helper`
+3. Create a `gulpfile.js`
 ```
 var gulp = require('gulp');
 var pkg = require('./package.json');
-var plugins = require('gulp-load-plugins')();
+// run 'gulp help' for available helper commands
 var skyComponentHelper = require('./gulp-sky-component-helper')(gulp, pkg);
 var paths = skyComponentHelper.paths;
 ```
+4. intialise your component `gulp init`
 
-#### Initialise your component
+Once the above is complete should have the conventional directory structure as well as the useful gulp tasks.
 
-`gulp component:init`
+## Generated Directory Structure
 
-### Gulp Tasks
+    $ component
+    ├── _site           => Generated / Compiled demo site
+    ├── dist            => Compiled code and source code to be distrubtuted via bower
+    ├── demo            => source code used soley for demoing the functionality
+    │   ├- js           => any javascript needed to get the demo working
+    │   ├- scss         => any Sass needed to get the demo working
+    │   ├- images etc.  => demo assets directories
+    │   └- index.html
+    ├── src             => source code for the component.
+    │   ├- js           => component javascript
+    │   ├- scss         => component Sass
+    │   ├- images etc.  => component assets directories
+    │   └- index.html
+
+
+## Gulp Tasks
+
+### Common Tasks
 
 The gulp tasks provided (and available on the command line) are:
 
- * `gulp serve` | Serves your demo page locally with compiled assets
- * `gulp release:gh-pages` | Pushes compiled assets to gh-pages branch
- * `gulp release:bower` | Tags github release to make assets  (compiled and source) available to bower 
- * `gulp release:cdn` | Pushes assets to AWS S3 and available via akamai
+ * `gulp serve`.  Serves your demo page locally with compiled assets
+ * `gulp release:gh-pages`.  Pushes compiled assets to gh-pages branch
+ * `gulp release:bower`.  Tags github release to make assets  (compiled and source) available to bower 
+ * `gulp release:cdn`.  Pushes assets to AWS S3 and available via akamai
 
 ### Pre-build Hook
 
