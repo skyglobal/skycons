@@ -1,34 +1,37 @@
 'use strict';
-
+var gulp;
+var pkg;
 var browserSync = require('browser-sync');
 var plugins = require('gulp-load-plugins')();
 var paths = require('./paths');
 
 
+function copyDir(location, fileType){
+    var files = (fileType === 'css') ? '/main.css' : '/**/*';
+    return gulp.src([paths[location][fileType] + files])
+        .pipe(gulp.dest(paths.dist[fileType]));
+}
 
-function gulpTasks(gulp, pkg){
+function awsUpload(fileType, awsS3){
+    var path = 'components/' + pkg.name.replace('bskyb-','') + '/' + pkg.version + '/' + fileType + '/';
+    return gulp.src(paths.dist[fileType] + '/**/*')
+        .pipe(awsS3.upload({ path: path } ));
+}
+
+function updateDocs(files){
+    var now = Date().split(' ').splice(0,5).join(' ');
+    return gulp.src(files, { base : './' })
+        .pipe(plugins.replace(/[0-9]+\.[0-9]+\.[0-9]/g, pkg.version))
+        .pipe(plugins.replace(/{{ site.version }}/g, pkg.version))
+        .pipe(plugins.replace(/{{ site.time }}/g, now))
+        .pipe(gulp.dest('./'));
+}
+
+function gulpTasks(globalGulp, globalPkg){
+    gulp = globalGulp;
+    pkg = globalPkg;
     var runSequence = require('run-sequence').use(gulp);
 
-    function copyDir(location, fileType){
-        var files = (fileType === 'css') ? '/main.css' : '/**/*';
-        return gulp.src([paths[location][fileType] + files])
-            .pipe(gulp.dest(paths.dist[fileType]));
-    }
-
-    function awsUpload(fileType, awsS3){
-        var path = 'components/' + pkg.name.replace('bskyb-','') + '/' + pkg.version + '/' + fileType + '/';
-        return gulp.src(paths.dist[fileType] + '/**/*')
-            .pipe(awsS3.upload({ path: path } ));
-    }
-
-    function updateDocs(files){
-        var now = Date().split(' ').splice(0,5).join(' ');
-        return gulp.src(files, { base : './' })
-            .pipe(plugins.replace(/[0-9]+\.[0-9]+\.[0-9]/g, pkg.version))
-            .pipe(plugins.replace(/{{ site.version }}/g, pkg.version))
-            .pipe(plugins.replace(/{{ site.time }}/g, now))
-            .pipe(gulp.dest('./'));
-    }
 
     gulp.task('pre-build', function(cb){
         //

@@ -2,15 +2,11 @@
 
 var gulp = require('gulp');
 var pkg = require('./package.json');
-var plugins = require('gulp-load-plugins')();
 var skyComponentHelper = require('./gulp-sky-component-helper')(gulp, pkg);
 var paths = skyComponentHelper.paths;
+var plugins = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var runSequence = require('run-sequence');
-
-/*
-
-*/
 
 gulp.task('copy-icons', function() {
     return gulp.src([paths.source['icons'] + '/*.svg'])
