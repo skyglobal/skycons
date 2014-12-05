@@ -1,4 +1,4 @@
-[Component](http://skyglobal.github.io/{{ component }}/) 
+[{{ component }}](http://skyglobal.github.io/{{ component }}/) 
 ========================
 
 > A collection of brand approved {{ component }} for use across Sky.com

@@ -137,8 +137,9 @@ function gulpTasks(globalGulp, globalPkg){
     /*
      * Common Gulp tasks
      */
-    gulp.task('init', function(callback) {
-        return gulp.src('component-structure/**/*')
+    gulp.task('init', function() {
+        return gulp.src(__dirname + '/component-structure/**/*')
+            .pipe(plugins.replace(/{{ component }}/g, pkg.name))
             .pipe(gulp.dest('./'));
     });
 

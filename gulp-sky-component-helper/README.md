@@ -8,7 +8,7 @@ Gulp Sky Component Helper
 ## Creating a Component
  
 1. Intialise github repo and clone locally
-2. Create a `package.json` (for [node](https://www.npmjs.org/doc/files/package.json.html))
+2. Create a `package.json` (for [node](https://www.npmjs.org/doc/files/package.json.html)) updating `name` to your component name (lower case).
 2. Install the helper using `npm install --save-dev gulp-sky-component-helper`
 3. Create a `gulpfile.js` containing the following:
 ```
