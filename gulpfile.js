@@ -8,6 +8,10 @@ var paths = skyComponentHelper.paths;
 var browserSync = require('browser-sync');
 var runSequence = require('run-sequence');
 
+/*
+
+*/
+
 gulp.task('copy-icons', function() {
     return gulp.src([paths.source['icons'] + '/*.svg'])
         .pipe(gulp.dest(paths.site['icons']));

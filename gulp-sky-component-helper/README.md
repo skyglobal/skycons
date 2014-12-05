@@ -5,11 +5,13 @@ Gulp Sky Component Helper
 
 ## Usage
 
-### Install 
+### Setup
+ 
+#### Install the helper
 
 `npm install --save-dev gulp-sky-component-helper`
 
-### Within gulpfile.js
+#### Create a gulpfile.js
 
 To gain access to the default gulp tasks, include the following at the top of your `gulpfile.js`:
 
@@ -20,6 +22,10 @@ var plugins = require('gulp-load-plugins')();
 var skyComponentHelper = require('./gulp-sky-component-helper')(gulp, pkg);
 var paths = skyComponentHelper.paths;
 ```
+
+#### Initialise your component
+
+`gulp component:init`
 
 ### Gulp Tasks
 
