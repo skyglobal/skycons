@@ -11,23 +11,24 @@ Gulp Sky Component Helper
 
 ### Within gulpfile.js
 
-To gain access to the gulp tasks include the following at the top of your `gulpfile.js`:
+To gain access to the default gulp tasks, include the following at the top of your `gulpfile.js`:
 
 ```
 var gulp = require('gulp');
 var pkg = require('./package.json');
-var skyComponentHelper = require('gulp-sky-component-helper');
-var gulpHelper = skyComponentHelper.gulp(gulp, pkg);
+var plugins = require('gulp-load-plugins')();
+var skyComponentHelper = require('./gulp-sky-component-helper')(gulp, pkg);
+var paths = skyComponentHelper.paths;
 ```
 
 ### Gulp Tasks
 
-The gulp tasks provided are:
+The gulp tasks provided (and available on the command line) are:
 
- * `gulp serve`
- * `gulp release:gh-pages`
- * `gulp release:bower`
- * `gulp release:cdn`
+ * `gulp serve` | Serves your demo page locally with compiled assets
+ * `gulp release:gh-pages` | Pushes compiled assets to gh-pages branch
+ * `gulp release:bower` | Tags github release to make assets  (compiled and source) available to bower 
+ * `gulp release:cdn` | Pushes assets to AWS S3 and available via akamai
 
 ### Pre-build Hook
 
@@ -45,12 +46,3 @@ gulp.task('pre-build', function(cb){
 BSkyB components depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
 
 [Read More >](CONTRIBUTING.md)
-
-## Browser Support
-
- * IE8 +
- * Safari 5 +
- * Latest Firefox
- * Latest Chrome
- * Latest Mobile Safari
- * Latest Mobile Chrome

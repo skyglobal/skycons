@@ -1,13 +1,12 @@
 'use strict';
 
 var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var runSequence = require('run-sequence');
 var pkg = require('./package.json');
 var plugins = require('gulp-load-plugins')();
-var skyComponentHelper = require('./gulp-sky-component-helper');
+var skyComponentHelper = require('./gulp-sky-component-helper')(gulp, pkg);
 var paths = skyComponentHelper.paths;
-var gulpHelper = skyComponentHelper.gulp(gulp, pkg);
+var browserSync = require('browser-sync');
+var runSequence = require('run-sequence');
 
 gulp.task('copy-icons', function() {
     return gulp.src([paths.source['icons'] + '/*.svg'])

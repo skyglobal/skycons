@@ -19,10 +19,7 @@ function gulpTasks(gulp, pkg){
         var path = 'components/' + pkg.name.replace('bskyb-','') + '/' + pkg.version + '/' + fileType + '/';
         return gulp.src(paths.dist[fileType] + '/**/*')
             .pipe(awsS3.upload({ path: path } ));
-
     }
-
-
 
     function updateDocs(files){
         var now = Date().split(' ').splice(0,5).join(' ');
@@ -166,10 +163,11 @@ function gulpTasks(gulp, pkg){
             cb
         );
     });
+
+    return {
+        paths: paths
+    }
 }
 
 
-module.exports = {
-    paths: paths,
-    gulp: gulpTasks
-};
+module.exports = gulpTasks;

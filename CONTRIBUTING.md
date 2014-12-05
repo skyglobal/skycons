@@ -6,10 +6,9 @@ We encourage small change pull requests, the smaller the change the quicker and 
 
 ## Dependencies
 
-To build the toolkit locally, you'll need to install:
+To build the Skycons locally, you'll need to install:
  * [node.js](http://nodejs.org),
  * [Gulp](http://gulpjs.com),
- * [Grunt](http://gruntjs.com/),
 
 
 ## Workflow
@@ -21,7 +20,7 @@ To build the toolkit locally, you'll need to install:
 `git remote add upstream https://github.com/skyglobal/skycons.git`
 4. Create a topic branch to contain your change
 `git checkout -b feature-my-feature`
-5. Place any new icons into [src/svg](/src/svg)
+5. Place any new icons into [src/icons](/src/icons)
 6. Make sure [CHANGELOG.md](./CHANGELOG.md) includes a summary of your changes in a new version number heading
 7. Make sure you are still up to date with master
 `git pull upstream master`
@@ -30,11 +29,9 @@ To build the toolkit locally, you'll need to install:
 `git push origin my-awesome-feature`
 10. Create a pull request and describe what your change does and the why you think it should be merged.
 
-If you would like the feature to go live sooner, mention this in the comments/commit. We will provide a temporary live url that will allow you to carry on without getting blocked.
-
 ## Running Locally
 
- * `gulp serve` :  Run Jekyll on port 3456
+ * `gulp serve` :  Run the server on port 3456
  
 ## Releasing (admin only)
 
