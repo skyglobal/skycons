@@ -5,7 +5,7 @@ Gulp Sky Component Helper
 
 > This helper is collection of common gulp tasks used to create and deploy Sky Components.
 
-## Getting Started
+## Creating a Component
  
 1. Intialise github repo and clone locally
 2. Create a `package.json` (for [node](https://www.npmjs.org/doc/files/package.json.html))
@@ -28,6 +28,7 @@ Once the above is complete should have the conventional directory structure as w
     ├── _site           => Generated / Compiled demo site
     ├── dist            => Compiled code and source code to be distrubtuted via bower
     ├── demo            => source code used soley for demoing the functionality
+    │   ├- _includes    => Contains any html files to be concatinated to index.html
     │   ├- js           => any javascript needed to get the demo working
     │   ├- scss         => any Sass needed to get the demo working
     │   ├- images etc.  => demo assets directories
