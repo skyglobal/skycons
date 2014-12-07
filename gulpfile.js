@@ -2,17 +2,23 @@
 
 var gulp = require('gulp');
 var pkg = require('./package.json');
-var skyComponentHelper = require('./gulp-sky-component-helper')(gulp, pkg);
+var skyComponentHelper = require('gulp-sky-component-helper')(gulp, pkg);
 var paths = skyComponentHelper.paths;
 var plugins = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var runSequence = require('run-sequence');
 
+var iconfont = require("gulp-iconfont")
+    , consolidate = require('gulp-consolidate')
+    , lodash = require('lodash');
+
+paths.source.fontSassTemplate = paths.source.root + '/main.scss';
+paths.source.fontHtmlTemplate = paths.source.root + '/index.html';
+
 gulp.task('copy-icons', function() {
     return gulp.src([paths.source['icons'] + '/*.svg'])
         .pipe(gulp.dest(paths.site['icons']));
 });
-
 
 gulp.task("skycons", function(){
     var fontName = 'skycons';
@@ -46,12 +52,3 @@ gulp.task("skycons", function(){
 gulp.task('pre-build', function(cb){
     return runSequence('copy-icons','skycons', cb);
 });
-
-
-
-var iconfont = require("gulp-iconfont")
-    , consolidate = require('gulp-consolidate');
-
-paths.source.fontSassTemplate = paths.source.root + '/main.scss';
-paths.source.fontHtmlTemplate = paths.source.root + '/index.html';
-
