@@ -1,18 +1,19 @@
-.demo {
-  margin-bottom: 40px;
-  clear: both;
-}
-.example{
-  clear: both;
-}
-.white{
-  color: white;
+@import 'bskyb-typography/dist/scss/typography';
+
+
+/* Common demo Sass here */
+.demo-updated {
+  display: block;
+  font-size: 0.3em;
 }
 
-.cushioned {
-  padding: 12%;
+.demo-block{
+  display: block;
+  clear: both;
 }
 
+
+//your demo specific scss here
 .icons-table tr i {
     line-height:1.2em;
     cursor:pointer;

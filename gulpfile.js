@@ -12,7 +12,7 @@ var iconfont = require("gulp-iconfont")
     , consolidate = require('gulp-consolidate')
     , lodash = require('lodash');
 
-paths.source.fontSassTemplate = paths.source.root + '/main.scss';
+paths.source.fontSassTemplate = paths.source.root + '/skycons.scss';
 paths.source.fontHtmlTemplate = paths.source.root + '/index.html';
 
 gulp.task('copy-icons', function() {
