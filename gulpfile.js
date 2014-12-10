@@ -1,10 +1,8 @@
 'use strict';
 
 var gulp = require('gulp');
-var pkg = require('./package.json');
-var skyComponentHelper = require('gulp-sky-component-helper')(gulp, pkg);
-var paths = skyComponentHelper.paths;
-var plugins = require('gulp-load-plugins')();
+var componentHelper = require('gulp-component-helper')(gulp);
+var paths = componentHelper.paths;
 var browserSync = require('browser-sync');
 var runSequence = require('run-sequence');
 
@@ -18,6 +16,10 @@ paths.source.fontHtmlTemplate = paths.source.root + '/index.html';
 gulp.task('copy-icons', function() {
     return gulp.src([paths.source['icons'] + '/*.svg'])
         .pipe(gulp.dest(paths.site['icons']));
+});
+gulp.task('copy-skycons', function() {
+    return gulp.src([paths.site['fonts'] + '/skycons.*'])
+        .pipe(gulp.dest(paths.dist['fonts']));
 });
 
 gulp.task("skycons", function(){
@@ -50,5 +52,5 @@ gulp.task("skycons", function(){
 
 
 gulp.task('pre-build', function(cb){
-    return runSequence('copy-icons','skycons', cb);
+    return runSequence('copy-icons','skycons','copy-skycons', cb);
 });
