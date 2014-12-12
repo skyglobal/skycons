@@ -41,14 +41,12 @@ p {
   line-height: 20px; }
 
 small {
-  font-size: 0.8125em;
-  line-height: 1em; }
+  font-size: em(13);
+  line-height: em(16); }
 
 ol, ul {
   margin: 0;
   padding: 0; }
-  ol li, ul li {
-    margin: 0 0 0.5em 1.2em; }
 
 b, strong, .medium {
   font-family: SkyTextMedium, SkyTextRegular, Helvetica, Arial, sans-serif; }
@@ -154,11 +152,13 @@ h3.smaller, .pod-title.smaller {
   .black a, .text--black a {
     color: #333333; }
 
+.list > * {
+  margin: 0 0 0.5em 1.2em; }
+
 .grey-bullets, .list--grey {
   list-style: none; }
   .grey-bullets > *, .list--grey > * {
-    position: relative;
-    margin: 0 0 0.5em 1.2em; }
+    position: relative; }
     .grey-bullets > *:before, .list--grey > *:before {
       content: '•';
       display: block;
@@ -174,7 +174,8 @@ body a.chevron:before, body a .skycon-chevron {
   margin-right: 6px;
   line-height: 1.35em;
   text-decoration: none;
-  vertical-align: top; }
+  vertical-align: top;
+  float: left; }
 
 /* Common demo Sass here */
 .demo-updated {
