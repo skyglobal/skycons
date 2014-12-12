@@ -1,4 +1,4 @@
-@import 'bskyb-colours/dist/scss/colours';
+@import 'bower_components/bskyb-colours/dist/scss/colours';
 
 @mixin set-skycon-content($skycon, $content){
   .skycon-#{$skycon}:before {
