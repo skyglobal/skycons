@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.0.8
+## 0.1.0
 
   * Added colours to mail and share icons!
   * Added BEM css classes for skycons!

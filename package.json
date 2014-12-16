@@ -8,7 +8,7 @@
     "gulp": "^3.8.10",
     "gulp-consolidate": "^0.1.2",
     "gulp-iconfont": "^1.0.0",
-    "gulp-component-helper": "^0.2.1",
+    "gulp-component-helper": "^0.3.0",
     "lodash": "^2.4.1",
     "run-sequence": "^1.0.1"
   },
