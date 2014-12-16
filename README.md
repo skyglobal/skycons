@@ -9,7 +9,7 @@ See http://skyglobal.github.io/skycons/ for a demo of the Skycons
 
 ### As CSS
 
-http://web-toolkit.global.sky.com/components/skycons/0.0.7/css/main.css
+http://web-toolkit.global.sky.com/components/skycons/0.0.8/css/main.css
 
 ### As a Sass Module
 
