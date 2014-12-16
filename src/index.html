@@ -25,20 +25,20 @@
         Ensure <code>aria-hidden</code> is used on your <code>skycon</code> tags.
     </li>
     <li>
-        To make the icon have a colour, add the class <code>colour</code>.
+        To make the icon have a colour, add the class <code>skycon--colour</code>.
     </li>
     <li>
-        To make the icon have a colour on hover, add the class <code>colour-hover</code> to the parent.
+        To make the icon have a colour on hover, add the class <code>skycon--colour__hover</code> to the parent.
     </li>
 </ul>
 
-<table id=wiki-skycons class="icons-table">
+<table class="demo-icons-table">
     <thead>
     <tr>
         <th>CSS Class</th>
         <th class="demo-col">How it looks</th>
-        <th class="demo-col">with .colour</th>
-        <th class="demo-col">with .hover-colour</th>
+        <th class="demo-col">with `.skycon--colour`</th>
+        <th class="demo-col">with `.skycon--colour__hover`</th>
         <th class="demo-col">for designers</th>
     </tr>
     </thead>
@@ -46,10 +46,10 @@
     <% _.each(glyphs, function(glyph) { %>
     <tr >
         <td>skycon-<%= glyph.name %></td>
-        <td class="icon"><i class="skycon-<%= glyph.name %>" aria-hidden=true></i></td>
-        <td class="icon"><i class="skycon-<%= glyph.name %> colour" aria-hidden=true></i></td>
-        <td class="icon hover-colour"><i class="skycon-<%= glyph.name %>" aria-hidden=true></i></td>
-        <td class="icon"><a href="icons/<%= glyph.name %>.svg" target="_new" title="Right click and 'Save as...'">view</a> </td>
+        <td class="demo-icon"><i class="skycon skycon--<%= glyph.name %>" aria-hidden=true></i></td>
+        <td class="demo-icon"><i class="skycon skycon--<%= glyph.name %> skycon--colour" aria-hidden=true></i></td>
+        <td class="demo-icon skycon--colour__hover"><i class="skycon skycon--<%= glyph.name %>" aria-hidden=true></i></td>
+        <td class="demo-icon"><a href="icons/<%= glyph.name %>.svg" target="_new" title="Right click and 'Save as...'">view</a> </td>
     </tr>
     <% }); %>
     </tbody>

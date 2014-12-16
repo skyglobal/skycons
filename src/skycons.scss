@@ -1,14 +1,17 @@
 @import 'bower_components/bskyb-colours/dist/scss/colours';
 
 @mixin set-skycon-content($skycon, $content){
-  .skycon-#{$skycon}:before {
+  .skycon-#{$skycon}:before, //deprecate me in-favour of bem style
+  .skycon--#{$skycon}:before {
     content: $content;
   }
 }
 
 @mixin set-skycon-colour($skycon, $colour){
-  .hover-colour:hover .skycon-#{$skycon} ,
-  .colour.skycon-#{$skycon} {
+  .hover-colour:hover .skycon-#{$skycon} ,//deprecate me in-favour of bem style
+  .colour.skycon-#{$skycon},//deprecate me in-favour of bem style
+  .skycon--colour__hover:hover .skycon--#{$skycon},
+  .skycon--colour.skycon--#{$skycon} {
     color: $colour;
   }
 }
@@ -26,14 +29,15 @@
 
 
 
-[class^="skycon-"]{
+[class^="skycon-"], //deprecate me in-favour of bem style
+.skycon{
   color: #333;
   font-size: 16px;
   line-height: 1.125em;
 }
 
 [class^="skycon-"]:before,
-[class*="skycon-"]:before {
+.skycon:before {
   font-family:"skycons";
   display:inline-block;
   vertical-align:middle;
@@ -50,7 +54,8 @@
 
 
 <% _.each(glyphs, function(glyph) { %>
-.skycon-<%= glyph.name %>:before{
+.skycon-<%= glyph.name %>:before, //deprecate me in-favour of bem style
+.skycon--<%= glyph.name %>:before{
   content: "\<%= glyph.codepoint.toString(16).toUpperCase() %>";
 }
 <% }) %>
@@ -76,6 +81,8 @@ body {
 @include set-skycon-colour('tv', $primary-button);
 @include set-skycon-colour('phone', $primary-button);
 @include set-skycon-colour('edit', $primary-button);
+@include set-skycon-colour('share', $primary-button);
+@include set-skycon-colour('mail', $primary-button);
 @include set-skycon-colour('pending', $success-icon);
 @include set-skycon-colour('whatsapp', #34AF23);
 

@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.0.8
+
+  * Added colours to mail and share icons!
+  * Added BEM css classes for skycons!
+    * namespace the colour class : now `skycon--colour`
+    * namespace the hover-colour class : now `skycon--colour__hover`
+
 ## 0.0.5
 
   * bower structure changed
