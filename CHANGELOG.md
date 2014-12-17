@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.1
+
+  * Fixed but when non-bem `skycon-` class is not used first in the tag
+
 ## 0.1.0
 
   * Added colours to mail and share icons!
