@@ -4,12 +4,12 @@
   src: url('../fonts/skycons.eot');
   src: url('../fonts/skycons.eot?#iefix') format('eot'), url('../fonts/skycons.woff') format('woff'), url('../fonts/skycons.ttf') format('truetype'), url('../fonts/skycons.svg#skycons') format('svg'); }
 
-[class^="skycon-"], .skycon {
+[class^="skycon-"], [class*="skycon-"], .skycon {
   color: #333;
   font-size: 16px;
   line-height: 1.125em; }
 
-[class^="skycon-"]:before, .skycon:before {
+[class^="skycon-"]:before, [class*="skycon-"]:before, .skycon:before {
   font-family: "skycons";
   display: inline-block;
   vertical-align: middle;

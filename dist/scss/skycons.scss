@@ -30,13 +30,15 @@
 
 
 [class^="skycon-"], //deprecate me in-favour of bem style
+[class*="skycon-"], //deprecate me in-favour of bem style
 .skycon{
   color: #333;
   font-size: 16px;
   line-height: 1.125em;
 }
 
-[class^="skycon-"]:before,
+[class^="skycon-"]:before, //deprecate me in-favour of bem style
+[class*="skycon-"]:before, //deprecate me in-favour of bem style
 .skycon:before {
   font-family:"skycons";
   display:inline-block;
