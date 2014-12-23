@@ -49,7 +49,7 @@ ol, ul {
   padding: 0; }
 
 b, strong, .medium {
-  font-family: SkyTextMedium, SkyTextRegular, Helvetica, Arial, sans-serif; }
+  font-family: SkyTextMedium, Helvetica, Arial, sans-serif; }
 
 a {
   color: #0070a5;
@@ -176,6 +176,11 @@ body a.chevron:before, body a .skycon-chevron {
   text-decoration: none;
   vertical-align: top;
   float: left; }
+
+.internal-link {
+  color: #333333;
+  outline: 0 !important;
+  border: 0; }
 
 /* Common demo Sass here */
 .demo-updated {
