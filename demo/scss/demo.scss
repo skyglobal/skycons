@@ -56,6 +56,10 @@
     text-align: left;
   width: 140px;
 }
+.demo-icons-table td:first-child,
+.demo-icons-table th:first-child{
+  width: 175px;
+}
 .demo-icons-table th.demo-col{
     text-align: center;
 }
