@@ -15,7 +15,13 @@ http://web-toolkit.global.sky.com/components/skycons/0.1.1/css/skycons.css
 
 `bower install --save-dev bskyb-skycons`
 
-### Locally
+### Developer Notes
+
+  * Ensure `aria-hidden` is used on your `skycon` tags.
+  * To give the icon colour, add the class `skycon--active`.
+  * To give the icon have a colour on hover, add the class `skycon--hover` to it's parent.
+
+## Build the Component Locally
 
 `gulp serve`
 
