@@ -1,4 +1,4 @@
-@import 'bower_components/bskyb-colours/dist/scss/colours';
+@import 'bower_components/bskyb-colours/src/scss/colours';
 
 @mixin set-skycon-content($skycon, $content){
   .skycon-#{$skycon}:before, //deprecate me in-favour of bem style

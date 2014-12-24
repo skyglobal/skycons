@@ -1,3 +1,4 @@
+@import 'bower_components/bskyb-grid/src/scss/grid';
 @import 'bower_components/bskyb-typography/src/scss/typography';
 
 
@@ -33,6 +34,17 @@
   width: 1px;
   overflow: hidden;
   display: block;
+}
+
+code{
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
 }
 
 

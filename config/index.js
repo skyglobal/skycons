@@ -1,9 +1,9 @@
-var pkg = require('../package.json');
-var bower = require('../bower.json');
+var findup = require('findup-sync');
+var bowerPath = findup('bower.json');
+var bower = (bowerPath) ? require(bowerPath) : {};
 bower.release = true;
 
 module.exports = {
-    pkg: pkg,
     bower: bower,
     aws:{
         release: true,

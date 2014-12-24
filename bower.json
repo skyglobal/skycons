@@ -7,14 +7,17 @@
     ],
     "description": "A collection of brand approved icons for use across Sky.com",
     "main": "dist",
-    "license": "MIT",
+    "license": "BSD3",
     "ignore": [
         "**/*",
         "!dist/**/*",
         "!src/**/*"
     ],
+    "dependencies": {
+        "bskyb-colours": "~0.1.0"
+    },
     "devDependencies": {
-        "bskyb-colours": "~0.0.9",
+        "bskyb-grid": "~0.1.0",
         "bskyb-typography": "~0.1.0"
     }
 }
