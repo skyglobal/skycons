@@ -1,29 +1,28 @@
 [Skycons](http://skyglobal.github.io/skycons/) 
 ========================
 
-> A collection of brand approved icons for use across Sky.com
+> A collection of brand approved icons for use across Sky.com.  [Demo Page](http://skyglobal.github.io/skycons/)
 
-See http://skyglobal.github.io/skycons/ for a demo of the Skycons
+## Quick-Start
 
-## Usage
+Include the Share assets in your project either as **Static Resources** 
 
-### Quick-Start
-
+```
 http://web-toolkit.global.sky.com/components/skycons/0.2.0/css/skycons.css
+```
 
-### Via Bower
+or alternatively, **Via Bower**
 
-`bower install --save-dev bskyb-skycons`
+```
+bower install --save-dev bskyb-skycons
+```
 
-### Developer Notes
+#### Developer Notes
 
   * Ensure `aria-hidden` is used on your `skycon` tags.
   * To give the icon colour, add the class `skycon--active`.
   * To give the icon have a colour on hover, add the class `skycon--hover` to it's parent.
 
-## Build the Component Locally
-
-`gulp serve`
 
 ## Contribution
 
