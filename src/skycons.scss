@@ -64,27 +64,33 @@
 
 
 body {
-@include set-skycon-colour('sky-go', $colour-sky-go);
-@include set-skycon-colour('remote-record', $colour-remote-record);
-@include set-skycon-colour('never-miss', $colour-never-miss);
-@include set-skycon-colour('warning', $error);
-@include set-skycon-colour('google-plus', $colour-google-plus);
-@include set-skycon-colour('twitter', $colour-twitter);
-@include set-skycon-colour('facebook', $colour-facebook);
-@include set-skycon-colour('tick', $success-icon);
-@include set-skycon-colour('chevron', $link);
-@include set-skycon-colour('chevron-up', $link);
-@include set-skycon-colour('chevron-down', $link);
-@include set-skycon-colour('at', $primary-button);
-@include set-skycon-colour('cloud', $primary-button);
-@include set-skycon-colour('on-demand', $primary-button);
-@include set-skycon-colour('sky-plus', $primary-button);
-@include set-skycon-colour('mouse', $primary-button);
-@include set-skycon-colour('tv', $primary-button);
-@include set-skycon-colour('phone', $primary-button);
-@include set-skycon-colour('edit', $primary-button);
-@include set-skycon-colour('share', $primary-button);
-@include set-skycon-colour('mail', $primary-button);
-@include set-skycon-colour('pending', $success-icon);
-@include set-skycon-colour('whatsapp', #34AF23);
+  @include set-skycon-colour('at', $primary-button);
+  @include set-skycon-colour('chevron', $link);
+  @include set-skycon-colour('chevron-left', $link);
+  @include set-skycon-colour('chevron-up', $link);
+  @include set-skycon-colour('chevron-down', $link);
+  @include set-skycon-colour('cloud', $primary-button);
+  @include set-skycon-colour('edit', $primary-button);
+  @include set-skycon-colour('facebook', $colour-facebook);
+  @include set-skycon-colour('google-plus', $colour-google-plus);
+  @include set-skycon-colour('mail', $primary-button);
+  @include set-skycon-colour('mouse', $primary-button);
+  @include set-skycon-colour('never-miss', $colour-never-miss);
+  @include set-skycon-colour('on-demand', $primary-button);
+  @include set-skycon-colour('pending', $success-icon);
+  @include set-skycon-colour('phone', $primary-button);
+  @include set-skycon-colour('remote-record', $colour-remote-record);
+  @include set-skycon-colour('remote-download', $colour-remote-record);
+  @include set-skycon-colour('share', $primary-button);
+  @include set-skycon-colour('sky-go', $colour-sky-go);
+  @include set-skycon-colour('sky-plus', $primary-button);
+  @include set-skycon-colour('tick', $success-icon);
+  @include set-skycon-colour('tv', $primary-button);
+  @include set-skycon-colour('twitter', $colour-twitter);
+  @include set-skycon-colour('twitter-follow', $colour-twitter);
+  @include set-skycon-colour('twitter-reply', #085DA9);
+  @include set-skycon-colour('twitter-retweet', #5c913b);
+  @include set-skycon-colour('twitter-favourite', #ffac33);
+  @include set-skycon-colour('warning', $error);
+  @include set-skycon-colour('whatsapp', #34AF23);
 }

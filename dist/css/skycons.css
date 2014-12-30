@@ -177,6 +177,8 @@ body .hover-colour:hover .skycon-sky-go, body .colour.skycon-sky-go, body .skyco
   color: #44ad3a; }
 body .hover-colour:hover .skycon-remote-record, body .colour.skycon-remote-record, body .skycon--hover:hover .skycon--remote-record, body .skycon--remote-record.skycon--active {
   color: #ed1c24; }
+body .hover-colour:hover .skycon-remote-download, body .colour.skycon-remote-download, body .skycon--hover:hover .skycon--remote-download, body .skycon--remote-download.skycon--active {
+  color: #ed1c24; }
 body .hover-colour:hover .skycon-never-miss, body .colour.skycon-never-miss, body .skycon--hover:hover .skycon--never-miss, body .skycon--never-miss.skycon--active {
   color: #0077ae; }
 body .hover-colour:hover .skycon-warning, body .colour.skycon-warning, body .skycon--hover:hover .skycon--warning, body .skycon--warning.skycon--active {
@@ -185,11 +187,21 @@ body .hover-colour:hover .skycon-google-plus, body .colour.skycon-google-plus, b
   color: #dd4c38; }
 body .hover-colour:hover .skycon-twitter, body .colour.skycon-twitter, body .skycon--hover:hover .skycon--twitter, body .skycon--twitter.skycon--active {
   color: #25a8e0; }
+body .hover-colour:hover .skycon-twitter-follow, body .colour.skycon-twitter-follow, body .skycon--hover:hover .skycon--twitter-follow, body .skycon--twitter-follow.skycon--active {
+  color: #25a8e0; }
+body .hover-colour:hover .skycon-twitter-reply, body .colour.skycon-twitter-reply, body .skycon--hover:hover .skycon--twitter-reply, body .skycon--twitter-reply.skycon--active {
+  color: #085DA9; }
+body .hover-colour:hover .skycon-twitter-retweet, body .colour.skycon-twitter-retweet, body .skycon--hover:hover .skycon--twitter-retweet, body .skycon--twitter-retweet.skycon--active {
+  color: #5c913b; }
+body .hover-colour:hover .skycon-twitter-favourite, body .colour.skycon-twitter-favourite, body .skycon--hover:hover .skycon--twitter-favourite, body .skycon--twitter-favourite.skycon--active {
+  color: #ffac33; }
 body .hover-colour:hover .skycon-facebook, body .colour.skycon-facebook, body .skycon--hover:hover .skycon--facebook, body .skycon--facebook.skycon--active {
   color: #3b5998; }
 body .hover-colour:hover .skycon-tick, body .colour.skycon-tick, body .skycon--hover:hover .skycon--tick, body .skycon--tick.skycon--active {
   color: #6dbb00; }
 body .hover-colour:hover .skycon-chevron, body .colour.skycon-chevron, body .skycon--hover:hover .skycon--chevron, body .skycon--chevron.skycon--active {
+  color: #0070a5; }
+body .hover-colour:hover .skycon-chevron-left, body .colour.skycon-chevron-left, body .skycon--hover:hover .skycon--chevron-left, body .skycon--chevron-left.skycon--active {
   color: #0070a5; }
 body .hover-colour:hover .skycon-chevron-up, body .colour.skycon-chevron-up, body .skycon--hover:hover .skycon--chevron-up, body .skycon--chevron-up.skycon--active {
   color: #0070a5; }

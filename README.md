@@ -7,11 +7,11 @@ See http://skyglobal.github.io/skycons/ for a demo of the Skycons
 
 ## Usage
 
-### As CSS
+### Quick-Start
 
 http://web-toolkit.global.sky.com/components/skycons/0.2.0/css/skycons.css
 
-### As a Sass Module
+### Via Bower
 
 `bower install --save-dev bskyb-skycons`
 
