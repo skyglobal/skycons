@@ -13,9 +13,9 @@ http://web-toolkit.global.sky.com/components/skycons/0.2.0/css/skycons.css
 
 or alternatively, **Via Bower**
 
-```
-bower install --save-dev bskyb-skycons
-```
+ * Run: `bower install --save-dev bskyb-skycons`
+ * Sass: `@import 'bower_components/bskyb-skycons/dist/scss/skycons';`
+
 
 #### Developer Notes
 
