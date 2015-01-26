@@ -13,7 +13,9 @@ module.exports = function(grunt) {
                   'src/svg/chevron-up.svg',
                   'src/svg/search.svg',
                   'src/svg/facebook.svg',
-                  'src/svg/twitter.svg'
+                  'src/svg/twitter.svg', 
+                  'src/svg/phone.svg', 
+                  'src/svg/speech-bubble.svg'
                 ],
                 dest: 'dist',
                 destCss: 'dist',
