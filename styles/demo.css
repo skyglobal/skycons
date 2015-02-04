@@ -1,10 +1,11 @@
+@charset "UTF-8";
 /* returns the width of that coloumn count */
 body {
   margin: 0;
   padding: 0; }
 
 .skycom-container {
-  width: 94.05941%;
+  width: 94.059%;
   max-width: 1140px;
   margin: 0 auto;
   clear: left;
@@ -15,7 +16,7 @@ body {
 
 .skycom-12, .skycom-11, .skycom-10, .skycom-9, .skycom-8, .skycom-7, .skycom-6, .skycom-5, .skycom-4, .skycom-3, .skycom-2, .skycom-1 {
   float: left;
-  margin-left: 3.15789%; }
+  margin-left: 3.158%; }
 
 .right {
   float: right !important; }
@@ -28,142 +29,142 @@ body {
   clear: left; }
 
 .skycom-12 .cushioned {
-  padding: 1.75439%; }
+  padding: 1.754%; }
 
 .skycom-12 {
   width: 100%; }
 
 .skycom-11 .cushioned {
-  padding: 1.91939%; }
+  padding: 1.919%; }
 
 .skycom-11 {
-  width: 91.40351%; }
+  width: 91.404%; }
 
 .skycom-10 .cushioned {
-  padding: 2.11864%; }
+  padding: 2.119%; }
 
 .skycom-10 {
-  width: 82.80702%; }
+  width: 82.807%; }
 
 .skycom-9 .cushioned {
-  padding: 2.36407%; }
+  padding: 2.364%; }
 
 .skycom-9 {
-  width: 74.21053%; }
+  width: 74.211%; }
 
 .skycom-8 .cushioned {
-  padding: 2.6738%; }
+  padding: 2.674%; }
 
 .skycom-8 {
-  width: 65.61404%; }
+  width: 65.614%; }
 
 .skycom-7 .cushioned {
-  padding: 3.07692%; }
+  padding: 3.077%; }
 
 .skycom-7 {
-  width: 57.01754%; }
+  width: 57.018%; }
 
 .skycom-6 .cushioned {
-  padding: 3.62319%; }
+  padding: 3.623%; }
 
 .skycom-6 {
-  width: 48.42105%; }
+  width: 48.421%; }
 
 .skycom-5 .cushioned {
-  padding: 4.40529%; }
+  padding: 4.405%; }
 
 .skycom-5 {
-  width: 39.82456%; }
+  width: 39.825%; }
 
 .skycom-4 .cushioned {
-  padding: 5.61798%; }
+  padding: 5.618%; }
 
 .skycom-4 {
-  width: 31.22807%; }
+  width: 31.228%; }
 
 .skycom-3 .cushioned {
-  padding: 7.75194%; }
+  padding: 7.752%; }
 
 .skycom-3 {
-  width: 22.63158%; }
+  width: 22.632%; }
 
 .skycom-2 .cushioned {
   padding: 12.5%; }
 
 .skycom-2 {
-  width: 14.03509%; }
+  width: 14.035%; }
 
 .skycom-1 .cushioned {
-  padding: 32.25806%; }
+  padding: 32.258%; }
 
 .skycom-1 {
-  width: 5.4386%; }
+  width: 5.439%; }
 
 .skycom-offset1, .skycom-offset1:first-child {
-  margin-left: 8.59649%; }
+  margin-left: 8.596%; }
 
 .skycom-offset1.alpha {
-  margin-left: 5.4386%; }
+  margin-left: 5.439%; }
 
 .skycom-offset2, .skycom-offset2:first-child {
-  margin-left: 17.19298%; }
+  margin-left: 17.193%; }
 
 .skycom-offset2.alpha {
-  margin-left: 14.03509%; }
+  margin-left: 14.035%; }
 
 .skycom-offset3, .skycom-offset3:first-child {
-  margin-left: 25.78947%; }
+  margin-left: 25.789%; }
 
 .skycom-offset3.alpha {
-  margin-left: 22.63158%; }
+  margin-left: 22.632%; }
 
 .skycom-offset4, .skycom-offset4:first-child {
-  margin-left: 34.38596%; }
+  margin-left: 34.386%; }
 
 .skycom-offset4.alpha {
-  margin-left: 31.22807%; }
+  margin-left: 31.228%; }
 
 .skycom-offset5, .skycom-offset5:first-child {
-  margin-left: 42.98246%; }
+  margin-left: 42.982%; }
 
 .skycom-offset5.alpha {
-  margin-left: 39.82456%; }
+  margin-left: 39.825%; }
 
 .skycom-offset6, .skycom-offset6:first-child {
-  margin-left: 51.57895%; }
+  margin-left: 51.579%; }
 
 .skycom-offset6.alpha {
-  margin-left: 48.42105%; }
+  margin-left: 48.421%; }
 
 .skycom-offset7, .skycom-offset7:first-child {
-  margin-left: 60.17544%; }
+  margin-left: 60.175%; }
 
 .skycom-offset7.alpha {
-  margin-left: 57.01754%; }
+  margin-left: 57.018%; }
 
 .skycom-offset8, .skycom-offset8:first-child {
-  margin-left: 68.77193%; }
+  margin-left: 68.772%; }
 
 .skycom-offset8.alpha {
-  margin-left: 65.61404%; }
+  margin-left: 65.614%; }
 
 .skycom-offset9, .skycom-offset9:first-child {
-  margin-left: 77.36842%; }
+  margin-left: 77.368%; }
 
 .skycom-offset9.alpha {
-  margin-left: 74.21053%; }
+  margin-left: 74.211%; }
 
 .skycom-offset10, .skycom-offset10:first-child {
-  margin-left: 85.96491%; }
+  margin-left: 85.965%; }
 
 .skycom-offset10.alpha {
-  margin-left: 82.80702%; }
+  margin-left: 82.807%; }
 
 .skycom-offset11, .skycom-offset11:first-child {
-  margin-left: 94.5614%; }
+  margin-left: 94.561%; }
 
 .skycom-offset11.alpha {
-  margin-left: 91.40351%; }
+  margin-left: 91.404%; }
 
 .lt-ie9 body, body.lt-ie9 {
   min-width: 1212px; }
@@ -196,100 +197,69 @@ body {
   body {
     width: 100%;
     min-width: 320px; }
-
   .skycom-12, .skycom-11, .skycom-10, .skycom-9, .skycom-8, .skycom-7, .skycom-6, .skycom-5, .skycom-4, .skycom-3, .skycom-2, .skycom-1 {
     width: 100%;
     margin-left: 0; }
-
   .skycom-12 .cushioned, .skycom-11 .cushioned, .skycom-10 .cushioned, .skycom-9 .cushioned, .skycom-8 .cushioned, .skycom-7 .cushioned, .skycom-6 .cushioned, .skycom-5 .cushioned, .skycom-4 .cushioned, .skycom-3 .cushioned, .skycom-2 .cushioned, .skycom-1 .cushioned {
-    padding: 3.15789%; }
-
+    padding: 3.158%; }
   .skycom-12-mobile, .skycom-11-mobile, .skycom-10-mobile, .skycom-9-mobile, .skycom-8-mobile, .skycom-7-mobile, .skycom-6-mobile, .skycom-5-mobile, .skycom-4-mobile, .skycom-3-mobile, .skycom-2-mobile, .skycom-1-mobile {
     float: left;
-    margin-left: 3.15789%; }
-
+    margin-left: 3.158%; }
   .alpha-mobile, [class*=skycom-offset], [class*=skycom-offset]:first-child, .skycom-12-mobile:first-child, .skycom-11-mobile:first-child, .skycom-10-mobile:first-child, .skycom-9-mobile:first-child, .skycom-8-mobile:first-child, .skycom-7-mobile:first-child, .skycom-6-mobile:first-child, .skycom-5-mobile:first-child, .skycom-4-mobile:first-child, .skycom-3-mobile:first-child, .skycom-2-mobile:first-child, .skycom-1-mobile:first-child {
     margin-left: 0;
     clear: left; }
-
   .skycom-12-mobile {
     width: 100%; }
-
   .skycom-11-mobile {
-    width: 91.40351%; }
-
+    width: 91.404%; }
   .skycom-10-mobile {
-    width: 82.80702%; }
-
+    width: 82.807%; }
   .skycom-9-mobile {
-    width: 74.21053%; }
-
+    width: 74.211%; }
   .skycom-8-mobile {
-    width: 65.61404%; }
-
+    width: 65.614%; }
   .skycom-7-mobile {
-    width: 57.01754%; }
-
+    width: 57.018%; }
   .skycom-6-mobile {
-    width: 48.42105%; }
-
+    width: 48.421%; }
   .skycom-5-mobile {
-    width: 39.82456%; }
-
+    width: 39.825%; }
   .skycom-4-mobile {
-    width: 31.22807%; }
-
+    width: 31.228%; }
   .skycom-3-mobile {
-    width: 22.63158%; }
-
+    width: 22.632%; }
   .skycom-2-mobile {
-    width: 14.03509%; }
-
+    width: 14.035%; }
   .skycom-1-mobile {
-    width: 5.4386%; }
-
+    width: 5.439%; }
   .skycom-12-mobile .cushioned {
-    padding: 1.75439%; }
-
+    padding: 1.754%; }
   .skycom-11-mobile .cushioned {
-    padding: 1.91939%; }
-
+    padding: 1.919%; }
   .skycom-10-mobile .cushioned {
-    padding: 2.11864%; }
-
+    padding: 2.119%; }
   .skycom-9-mobile .cushioned {
-    padding: 2.36407%; }
-
+    padding: 2.364%; }
   .skycom-8-mobile .cushioned {
-    padding: 2.6738%; }
-
+    padding: 2.674%; }
   .skycom-7-mobile .cushioned {
-    padding: 3.07692%; }
-
+    padding: 3.077%; }
   .skycom-6-mobile .cushioned {
-    padding: 3.62319%; }
-
+    padding: 3.623%; }
   .skycom-5-mobile .cushioned {
-    padding: 4.40529%; }
-
+    padding: 4.405%; }
   .skycom-4-mobile .cushioned {
-    padding: 5.61798%; }
-
+    padding: 5.618%; }
   .skycom-3-mobile .cushioned {
-    padding: 7.75194%; }
-
+    padding: 7.752%; }
   .skycom-2-mobile .cushioned {
     padding: 12.5%; }
-
   .skycom-1-mobile .cushioned {
-    padding: 32.25806%; }
-
+    padding: 32.258%; }
   body .skycom-container-mobile {
-    width: 94.05941%; }
-
+    width: 94.059%; }
   body .skycom-container.bleed-mobile {
-    width: 100%; }
- }
+    width: 100%; } }
 
 @font-face {
   font-family: 'SkyTextRegular';
