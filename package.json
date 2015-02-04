@@ -7,7 +7,7 @@
     "gulp": "^3.8.10",
     "gulp-consolidate": "^0.1.2",
     "gulp-iconfont": "^1.0.0",
-    "component-helper": "^0.8.6",
+    "component-helper": "^0.8.7",
     "lodash": "^2.4.1"
   },
   "repository": {
