@@ -8,13 +8,13 @@
 Include the Share assets in your project either as **Static Resources** 
 
 ```
-http://web-toolkit.global.sky.com/components/skycons/0.2.0/css/skycons.css
+http://web-toolkit.global.sky.com/components/skycons/0.3.0/styles/skycons.min.css
 ```
 
 or alternatively, **Via Bower**
 
  * Run: `bower install --save-dev bskyb-skycons`
- * Sass: `@import 'bower_components/bskyb-skycons/dist/scss/skycons';`
+ * Sass: `@import 'bower_components/bskyb-skycons/dist/styles/skycons';`
 
 
 #### Developer Notes

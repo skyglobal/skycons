@@ -1,6 +1,6 @@
 {
     "name": "bskyb-skycons",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "homepage": "https://github.com/skyglobal/skycons",
     "authors": [
         "Peter Mouland <peter.mouland@gmail.com>"
@@ -11,7 +11,8 @@
     "ignore": [
         "**/*",
         "!dist/**/*",
-        "!src/**/*"
+        "!src/icons/*",
+        "!src/styles/*"
     ],
     "dependencies": {
         "bskyb-colours": "~0.1.0"
