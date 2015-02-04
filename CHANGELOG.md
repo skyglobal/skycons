@@ -1,5 +1,14 @@
 # Change Log
 
+## 0.3.0
+
+  * Added `stopwatch` icon
+  * Updated directories from CSS/scss to `styles`
+
+## 0.2.0
+
+  * Added `src` directory to bower
+
 ## 0.1.1
 
   * Fixed but when non-bem `skycon-` class is not used first in the tag
