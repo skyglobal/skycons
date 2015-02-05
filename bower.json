@@ -1,12 +1,11 @@
 {
     "name": "bskyb-skycons",
-    "version": "0.3.0",
     "homepage": "https://github.com/skyglobal/skycons",
     "authors": [
         "Peter Mouland <peter.mouland@gmail.com>"
     ],
     "description": "A collection of brand approved icons for use across Sky.com",
-    "main": "dist",
+    "main": "dist/styles/skycons.css",
     "license": "BSD3",
     "ignore": [
         "**/*",
