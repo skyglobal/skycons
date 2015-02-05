@@ -29,6 +29,16 @@ To build the Skycons locally, you'll need to install:
 `git push origin my-awesome-feature`
 10. Create a pull request and describe what your change does and the why you think it should be merged.
 
+## Optimising svg images
+
+You can run your svg icons through the online service provided by https://icomoon.io/
+
+1. Got https://icomoon.io/app/
+2. Select 'Import Icons' and upload the svg icons you want to optimise
+3. Select the edit tool in the toolbar (the little pen)
+4. Then click on your icon that should appear at the top in the 'Untitled Set'
+5. Click on 'Download'. This will download an already optimised svg icon to your computer.
+
 ## Running Locally
 
  * `gulp serve` :  Run the server on port 3456
