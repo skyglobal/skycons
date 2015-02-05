@@ -1,21 +1,18 @@
 {
-  "name": "bskyb-skycons",
-  "version": "0.0.4",
+  "name": "skycons",
+  "version": "0.3.0",
   "description": "Icons for Sky",
   "main": "index.js",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-webfont": "^0.4.8",
-    "grunt-exec": "^0.4.6",
-    "grunt-contrib-connect": "^0.8.0",
-    "grunt-svgmin": "^1.0.0",
-    "grunt-sass": "^0.14.1",
-    "gulp": "^3.8.8",
-    "gulp-gh-pages": "^0.3.4"
+    "gulp": "^3.8.10",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-iconfont": "^1.0.0",
+    "component-helper": "^0.8.7",
+    "lodash": "^2.4.1"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/skyglobal/skycons.git"
   },
-  "author": "Pete Mouland and George Richmond"
+  "author": "Pete Mouland"
 }

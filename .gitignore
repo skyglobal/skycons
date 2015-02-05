@@ -7,4 +7,6 @@ _site/
 node_modules/
 bower_components/
 npm-debug.log
-
+*.iml
+demo/index.html
+src/styles/skycons.scss

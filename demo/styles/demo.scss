@@ -1,0 +1,83 @@
+@import 'bower_components/bskyb-grid/src/scss/grid';
+@import 'bower_components/bskyb-typography/src/scss/typography';
+
+
+/* Common demo Sass here */
+.demo-updated {
+  display: block;
+  font-size: 0.3em;
+}
+
+.demo-block{
+  display: block;
+  clear: both;
+}
+.demo-version{
+  font-size: 0.5em;
+}
+.demo-icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px
+}
+.demo-icon--github{
+  background: url(../images/GitHub-Mark-32px.png) no-repeat 0px 0px;
+  background-size: 100%;
+}
+.speak {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  display: block;
+}
+
+code{
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+
+
+//your demo specific scss here
+.demo-icons-table tr i {
+    line-height:1.2em;
+    cursor:pointer;
+}
+.demo-icons-table tr:hover{
+    background: #eee;
+}
+.demo-icons-table tr:hover i[class*="skycon-"] {
+    -moz-transform: scale(5);
+    -webkit-transform: scale(5);
+    transform: scale(5);
+    overflow: visible;
+    background: white;
+}
+.demo-icons-table td,
+.demo-icons-table th{
+    text-align: left;
+  width: 140px;
+}
+.demo-icons-table td:first-child,
+.demo-icons-table th:first-child{
+  width: 175px;
+}
+.demo-icons-table th.demo-col{
+    text-align: center;
+}
+.demo-icons-table th.demo-icon,
+.demo-icons-table td.demo-icon{
+    text-align: center;
+  display: table-cell;
+
+}
