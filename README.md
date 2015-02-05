@@ -8,7 +8,7 @@
 Include the Share assets in your project either as **Static Resources** 
 
 ```
-http://web-toolkit.global.sky.com/components/skycons/0.3.0/styles/skycons.min.css
+http://web-toolkit.global.sky.com/components/skycons/0.3.1/styles/skycons.min.css
 ```
 
 or alternatively, **Via Bower**

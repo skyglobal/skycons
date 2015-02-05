@@ -14,11 +14,11 @@ To build the Skycons locally, you'll need to install:
 ## Workflow
 
 1. Fork the project
-2. Clone down your fork
+2. Clone your fork
 `git clone git://github.com/<username>/skycons.git`
 3. Setup your 'upstream'
 `git remote add upstream https://github.com/skyglobal/skycons.git`
-4. Create a topic branch to contain your change
+4. Create a feature branch to contain your change
 `git checkout -b feature-my-feature`
 5. Place any new icons into [src/icons](/src/icons)
 6. Make sure [CHANGELOG.md](./CHANGELOG.md) includes a summary of your changes in a new version number heading
