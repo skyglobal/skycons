@@ -11,7 +11,7 @@
 
 ## 0.1.1
 
-  * Fixed but when non-bem `skycon-` class is not used first in the tag
+  * Fixed bug when non-bem `skycon-` class is not used first in the tag
 
 ## 0.1.0
 
