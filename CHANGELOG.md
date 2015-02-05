@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.1
+
+  * Fixed the `stopwatch` icon by running it through https://icomoon.io/app/
+
 ## 0.3.0
 
   * Added `stopwatch` icon
