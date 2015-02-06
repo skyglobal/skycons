@@ -8,7 +8,7 @@
 Include the Share assets in your project either as **Static Resources** 
 
 ```
-http://web-toolkit.global.sky.com/components/skycons/0.3.1/styles/skycons.min.css
+http://web-toolkit.global.sky.com/components/skycons/0.3.2/styles/skycons.min.css
 ```
 
 or alternatively, **Via Bower**
@@ -26,9 +26,9 @@ or alternatively, **Via Bower**
 
 ## Contribution
 
-BSkyB components depends on collaboration between developers across Sky. Contributions of any size are actively encouraged.
+Components depends on collaboration between developers. Contributions of any size are actively encouraged.
 
-[Read More >](CONTRIBUTING.md)
+To see how to build this component locally, read the [contribution guidelines](CONTRIBUTING.md).
 
 ## Browser Support
 
