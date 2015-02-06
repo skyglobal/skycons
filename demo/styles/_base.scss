@@ -1,0 +1,59 @@
+@import 'bower_components/bskyb-core/src/styles/core';
+
+/* Common demo Sass here */
+.demo-container {
+  width: 94.059%;
+  max-width: 1140px;
+  margin: 0 auto;
+  clear: left;
+  overflow: visible; }
+
+.demo-updated {
+  display: block;
+  font-size: 0.3em;
+}
+.demo-block{
+  margin-bottom: 20px;
+  display: block;
+  clear: both;
+}
+.demo-version{
+  font-size: 0.5em;
+}
+.demo-icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px
+}
+.demo-icon--github{
+  background: url(../images/GitHub-Mark-32px.png) no-repeat 0px 0px;
+  background-size: 100%;
+}
+
+.speak {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+code{
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
