@@ -8,12 +8,12 @@ module.exports = {
     buildStyles: 'sass', // less not yet available
     buildHTML: 'html-concat', // moustache or assemble or jekyll not yet available
     buildScripts: 'browserify', // or requirejs not yet available
-    release: false, /// or 'aws',
+    release: 'aws', /// or 'aws',
     releaseConfig: { //add you release config here... this is for AWS
-        bucket: process.env.YOUR_AWS_BUCKET,
-        accessKey: process.env.YOUR_AWS_ACCESS_KEY_ID,
-        secret: process.env.YOUR_AWS_SECRET_ACCESS_KEY,
-        region: process.env.YOUR_AWS_REGION,
+        bucket: process.env.AWS_SKYGLOBAL_BUCKET,
+        accessKey: process.env.AWS_ACCESS_KEY_ID,
+        secret: process.env.AWS_SECRET_ACCESS_KEY,
+        region: process.env.AWS_REGION,
         directoryPrefix: 'components/' //prefix your destination directory for the cloud
     },
     test: false,
