@@ -14,10 +14,7 @@
         "!src/styles/*"
     ],
     "dependencies": {
-        "bskyb-colours": "~0.1.0"
+        "bskyb-core": "~0.0.3"
     },
-    "devDependencies": {
-        "bskyb-grid": "~0.1.0",
-        "bskyb-typography": "~0.1.0"
-    }
+    "version": "0.3.2"
 }
