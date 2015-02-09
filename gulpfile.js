@@ -51,6 +51,11 @@ gulp.task("skycons",  function(){
                 fontName: fontName,
                 fontPath: '../fonts/'
             };
+            // Prepare core SCSS partial
+            gulp.src(paths.source.root + '/skycons-core.scss')
+                .pipe(consolidate('lodash',  options))
+                .pipe(gulp.dest(paths.source.styles));
+
             // Create CSS
             gulp.src(paths.source.root + '/skycons.scss')
                 .pipe(consolidate('lodash',  options))

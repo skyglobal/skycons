@@ -1,4 +1,5 @@
 @import 'bower_components/bskyb-core/src/styles/modules/colours';
+@import 'skycons-core';
 
 @mixin set-skycon-content($skycon, $content){
   .skycon-#{$skycon}:before, //deprecate me in-favour of bem style
@@ -16,18 +17,6 @@
   }
 }
 
-/*<%= fontPath %>*/
-@font-face {
-  font-family: "<%= fontName %>";
-  src: url('<%= fontPath %><%= fontName %>.eot');
-  src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
-  url('<%= fontPath %><%= fontName %>.woff') format('woff'),
-  url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
-  url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
-
-}
-
-
 
 [class^="skycon-"], //deprecate me in-favour of bem style
 [class*="skycon-"], //deprecate me in-favour of bem style
@@ -36,32 +25,6 @@
   font-size: 16px;
   line-height: 1.125em;
 }
-
-[class^="skycon-"]:before, //deprecate me in-favour of bem style
-[class*="skycon-"]:before, //deprecate me in-favour of bem style
-.skycon:before {
-  font-family:"skycons";
-  display:inline-block;
-  vertical-align:middle;
-  line-height:1;
-  font-weight:normal;
-  font-style:normal;
-  speak:none;
-  text-decoration:inherit;
-  text-transform:none;
-  text-rendering:optimizeLegibility;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
-
-
-<% _.each(glyphs, function(glyph) { %>
-.skycon-<%= glyph.name %>:before, //deprecate me in-favour of bem style
-.skycon--<%= glyph.name %>:before{
-  content: "\<%= glyph.codepoint.toString(16).toUpperCase() %>";
-}
-<% }) %>
-
 
 body {
   @include set-skycon-colour('at', $primary-button);
