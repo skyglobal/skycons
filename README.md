@@ -9,12 +9,12 @@ Include the Share assets in your project either as **Static Resources**
 
 with default colours:
 ```html
-<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.3/styles/skycons.min.css" />
+<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.4/styles/skycons.min.css" />
 ```
 
 without default colours:
 ```html
-<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.3/styles/skycons-core.min.css" />
+<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.4/styles/skycons-core.min.css" />
 ```
 
 or alternatively, **Via Bower**
