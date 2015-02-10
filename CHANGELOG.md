@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.5
+
+  * Added missing scss file for bower
+
 ## 0.3.4
 
   * Updated CSS to provide an option to include only the minimum css needed to render icons (without colours or other font formatting) as `skycons-core.min.css`.
