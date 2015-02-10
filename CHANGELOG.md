@@ -2,7 +2,7 @@
 
 ## 0.3.4
 
-  * Extracting core scss into its own file that gets built as skycons-core.css and skycons-core.min.css. This means that there is now an option for projects to include only the minimum css needed to render icons, without colours or other font formatting.
+  * Updated CSS to provide an option to include only the minimum css needed to render icons (without colours or other font formatting) as `skycons-core.min.css`.
 
 ## 0.3.2
 

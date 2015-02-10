@@ -7,8 +7,14 @@
 
 Include the Share assets in your project either as **Static Resources** 
 
+with default colours:
+```html
+<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.3/styles/skycons.min.css" />
 ```
-http://web-toolkit.global.sky.com/components/skycons/0.3.3/styles/skycons.min.css
+
+without default colours:
+```html
+<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.3/styles/skycons-core.min.css" />
 ```
 
 or alternatively, **Via Bower**
@@ -20,8 +26,8 @@ or alternatively, **Via Bower**
 #### Developer Notes
 
   * Ensure `aria-hidden` is used on your `skycon` tags.
-  * To give the icon colour, add the class `skycon--active`.
-  * To give the icon have a colour on hover, add the class `skycon--hover` to it's parent.
+  * To give the icon colour, add the class `skycon--active` (only in skycons.min.css).
+  * To give the icon have a colour on hover, add the class `skycon--hover` to it's parent (only in skycons.min.css).
 
 
 ## Contribution
