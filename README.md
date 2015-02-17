@@ -20,7 +20,7 @@ without default colours:
 or alternatively, **Via Bower**
 
  * Run: `bower install --save-dev bskyb-skycons`
- * Sass: `@import 'bower_components/bskyb-skycons/dist/styles/skycons';`
+ * Sass: `@import 'bower_components/bskyb-skycons/src/styles/skycons';`
 
 
 #### Developer Notes
