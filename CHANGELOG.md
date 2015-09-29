@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.6
+
+  * Added thin chevrons
+
 ## 0.3.5
 
   * Added missing scss file for bower
@@ -40,20 +44,20 @@
 
   * bower structure changed
   * Fixed warning icon
-  
+
 ## 0.0.4
 
   * Fixed Google+ icon
   * Fixed minify icon
-  
+
 ## 0.0.3
 
   * Added scss into bower distributable
-  
+
 ## 0.0.2
 
   * Added WhatsApp Icon (with colour)
-  
+
 ## 0.0.1
 
   * Created

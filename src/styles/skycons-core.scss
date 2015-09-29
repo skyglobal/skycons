@@ -74,212 +74,232 @@
   content: "\E009";
 }
 
+.skycon-chevron-thin-down:before, //deprecate me in-favour of bem style
+.skycon--chevron-thin-down:before{
+  content: "\E00A";
+}
+
+.skycon-chevron-thin-left:before, //deprecate me in-favour of bem style
+.skycon--chevron-thin-left:before{
+  content: "\E00B";
+}
+
+.skycon-chevron-thin-up:before, //deprecate me in-favour of bem style
+.skycon--chevron-thin-up:before{
+  content: "\E00C";
+}
+
+.skycon-chevron-thin:before, //deprecate me in-favour of bem style
+.skycon--chevron-thin:before{
+  content: "\E00D";
+}
+
 .skycon-chevron-up:before, //deprecate me in-favour of bem style
 .skycon--chevron-up:before{
-  content: "\E00A";
+  content: "\E00E";
 }
 
 .skycon-chevron:before, //deprecate me in-favour of bem style
 .skycon--chevron:before{
-  content: "\E00B";
+  content: "\E00F";
 }
 
 .skycon-close:before, //deprecate me in-favour of bem style
 .skycon--close:before{
-  content: "\E00C";
+  content: "\E010";
 }
 
 .skycon-cloud:before, //deprecate me in-favour of bem style
 .skycon--cloud:before{
-  content: "\E00D";
+  content: "\E011";
 }
 
 .skycon-download:before, //deprecate me in-favour of bem style
 .skycon--download:before{
-  content: "\E00E";
+  content: "\E012";
 }
 
 .skycon-edit:before, //deprecate me in-favour of bem style
 .skycon--edit:before{
-  content: "\E00F";
+  content: "\E013";
 }
 
 .skycon-expand:before, //deprecate me in-favour of bem style
 .skycon--expand:before{
-  content: "\E010";
+  content: "\E014";
 }
 
 .skycon-facebook:before, //deprecate me in-favour of bem style
 .skycon--facebook:before{
-  content: "\E011";
+  content: "\E015";
 }
 
 .skycon-gallery:before, //deprecate me in-favour of bem style
 .skycon--gallery:before{
-  content: "\E012";
+  content: "\E016";
 }
 
 .skycon-google-plus:before, //deprecate me in-favour of bem style
 .skycon--google-plus:before{
-  content: "\E013";
+  content: "\E017";
 }
 
 .skycon-home:before, //deprecate me in-favour of bem style
 .skycon--home:before{
-  content: "\E014";
+  content: "\E018";
 }
 
 .skycon-info:before, //deprecate me in-favour of bem style
 .skycon--info:before{
-  content: "\E015";
+  content: "\E019";
 }
 
 .skycon-mail:before, //deprecate me in-favour of bem style
 .skycon--mail:before{
-  content: "\E016";
+  content: "\E01A";
 }
 
 .skycon-menu:before, //deprecate me in-favour of bem style
 .skycon--menu:before{
-  content: "\E017";
+  content: "\E01B";
 }
 
 .skycon-minify:before, //deprecate me in-favour of bem style
 .skycon--minify:before{
-  content: "\E018";
+  content: "\E01C";
 }
 
 .skycon-mouse:before, //deprecate me in-favour of bem style
 .skycon--mouse:before{
-  content: "\E019";
+  content: "\E01D";
 }
 
 .skycon-never-miss:before, //deprecate me in-favour of bem style
 .skycon--never-miss:before{
-  content: "\E01A";
+  content: "\E01E";
 }
 
 .skycon-on-demand:before, //deprecate me in-favour of bem style
 .skycon--on-demand:before{
-  content: "\E01B";
+  content: "\E01F";
 }
 
 .skycon-pending:before, //deprecate me in-favour of bem style
 .skycon--pending:before{
-  content: "\E01C";
+  content: "\E020";
 }
 
 .skycon-phone:before, //deprecate me in-favour of bem style
 .skycon--phone:before{
-  content: "\E01D";
+  content: "\E021";
 }
 
 .skycon-plus-circle:before, //deprecate me in-favour of bem style
 .skycon--plus-circle:before{
-  content: "\E01E";
+  content: "\E022";
 }
 
 .skycon-remote-download:before, //deprecate me in-favour of bem style
 .skycon--remote-download:before{
-  content: "\E01F";
+  content: "\E023";
 }
 
 .skycon-remote-record:before, //deprecate me in-favour of bem style
 .skycon--remote-record:before{
-  content: "\E020";
+  content: "\E024";
 }
 
 .skycon-search:before, //deprecate me in-favour of bem style
 .skycon--search:before{
-  content: "\E021";
+  content: "\E025";
 }
 
 .skycon-share:before, //deprecate me in-favour of bem style
 .skycon--share:before{
-  content: "\E022";
+  content: "\E026";
 }
 
 .skycon-sky-go:before, //deprecate me in-favour of bem style
 .skycon--sky-go:before{
-  content: "\E023";
+  content: "\E027";
 }
 
 .skycon-sky-plus:before, //deprecate me in-favour of bem style
 .skycon--sky-plus:before{
-  content: "\E024";
+  content: "\E028";
 }
 
 .skycon-sky:before, //deprecate me in-favour of bem style
 .skycon--sky:before{
-  content: "\E025";
+  content: "\E029";
 }
 
 .skycon-speech-bubble:before, //deprecate me in-favour of bem style
 .skycon--speech-bubble:before{
-  content: "\E026";
+  content: "\E02A";
 }
 
 .skycon-stopwatch:before, //deprecate me in-favour of bem style
 .skycon--stopwatch:before{
-  content: "\E027";
+  content: "\E02B";
 }
 
 .skycon-tick:before, //deprecate me in-favour of bem style
 .skycon--tick:before{
-  content: "\E028";
+  content: "\E02C";
 }
 
 .skycon-tv:before, //deprecate me in-favour of bem style
 .skycon--tv:before{
-  content: "\E029";
+  content: "\E02D";
 }
 
 .skycon-twitter-favourite:before, //deprecate me in-favour of bem style
 .skycon--twitter-favourite:before{
-  content: "\E02A";
+  content: "\E02E";
 }
 
 .skycon-twitter-follow:before, //deprecate me in-favour of bem style
 .skycon--twitter-follow:before{
-  content: "\E02B";
+  content: "\E02F";
 }
 
 .skycon-twitter-reply:before, //deprecate me in-favour of bem style
 .skycon--twitter-reply:before{
-  content: "\E02C";
+  content: "\E030";
 }
 
 .skycon-twitter-retweet:before, //deprecate me in-favour of bem style
 .skycon--twitter-retweet:before{
-  content: "\E02D";
+  content: "\E031";
 }
 
 .skycon-twitter:before, //deprecate me in-favour of bem style
 .skycon--twitter:before{
-  content: "\E02E";
+  content: "\E032";
 }
 
 .skycon-user-profile:before, //deprecate me in-favour of bem style
 .skycon--user-profile:before{
-  content: "\E02F";
+  content: "\E033";
 }
 
 .skycon-video-play:before, //deprecate me in-favour of bem style
 .skycon--video-play:before{
-  content: "\E030";
+  content: "\E034";
 }
 
 .skycon-volume:before, //deprecate me in-favour of bem style
 .skycon--volume:before{
-  content: "\E031";
+  content: "\E035";
 }
 
 .skycon-warning:before, //deprecate me in-favour of bem style
 .skycon--warning:before{
-  content: "\E032";
+  content: "\E036";
 }
 
 .skycon-whatsapp:before, //deprecate me in-favour of bem style
 .skycon--whatsapp:before{
-  content: "\E033";
+  content: "\E037";
 }
