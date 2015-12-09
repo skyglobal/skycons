@@ -29,277 +29,297 @@
 
 
 
+.skycon-alert:before, //deprecate me in-favour of bem style
+.skycon--alert:before{
+  content: "\E001";
+}
+
 .skycon-arrow-down-left:before, //deprecate me in-favour of bem style
 .skycon--arrow-down-left:before{
-  content: "\E001";
+  content: "\E002";
 }
 
 .skycon-arrow-left:before, //deprecate me in-favour of bem style
 .skycon--arrow-left:before{
-  content: "\E002";
+  content: "\E003";
 }
 
 .skycon-arrow-right:before, //deprecate me in-favour of bem style
 .skycon--arrow-right:before{
-  content: "\E003";
+  content: "\E004";
 }
 
 .skycon-at:before, //deprecate me in-favour of bem style
 .skycon--at:before{
-  content: "\E004";
+  content: "\E005";
 }
 
 .skycon-calender:before, //deprecate me in-favour of bem style
 .skycon--calender:before{
-  content: "\E005";
+  content: "\E006";
 }
 
 .skycon-carousel-pause:before, //deprecate me in-favour of bem style
 .skycon--carousel-pause:before{
-  content: "\E006";
+  content: "\E007";
 }
 
 .skycon-carousel-play:before, //deprecate me in-favour of bem style
 .skycon--carousel-play:before{
-  content: "\E007";
+  content: "\E008";
 }
 
 .skycon-chevron-down:before, //deprecate me in-favour of bem style
 .skycon--chevron-down:before{
-  content: "\E008";
+  content: "\E009";
 }
 
 .skycon-chevron-left:before, //deprecate me in-favour of bem style
 .skycon--chevron-left:before{
-  content: "\E009";
+  content: "\E00A";
 }
 
 .skycon-chevron-thin-down:before, //deprecate me in-favour of bem style
 .skycon--chevron-thin-down:before{
-  content: "\E00A";
+  content: "\E00B";
 }
 
 .skycon-chevron-thin-left:before, //deprecate me in-favour of bem style
 .skycon--chevron-thin-left:before{
-  content: "\E00B";
+  content: "\E00C";
 }
 
 .skycon-chevron-thin-up:before, //deprecate me in-favour of bem style
 .skycon--chevron-thin-up:before{
-  content: "\E00C";
+  content: "\E00D";
 }
 
 .skycon-chevron-thin:before, //deprecate me in-favour of bem style
 .skycon--chevron-thin:before{
-  content: "\E00D";
+  content: "\E00E";
 }
 
 .skycon-chevron-up:before, //deprecate me in-favour of bem style
 .skycon--chevron-up:before{
-  content: "\E00E";
+  content: "\E00F";
 }
 
 .skycon-chevron:before, //deprecate me in-favour of bem style
 .skycon--chevron:before{
-  content: "\E00F";
+  content: "\E010";
 }
 
 .skycon-close:before, //deprecate me in-favour of bem style
 .skycon--close:before{
-  content: "\E010";
+  content: "\E011";
 }
 
 .skycon-cloud:before, //deprecate me in-favour of bem style
 .skycon--cloud:before{
-  content: "\E011";
+  content: "\E012";
 }
 
 .skycon-download:before, //deprecate me in-favour of bem style
 .skycon--download:before{
-  content: "\E012";
+  content: "\E013";
 }
 
 .skycon-edit:before, //deprecate me in-favour of bem style
 .skycon--edit:before{
-  content: "\E013";
+  content: "\E014";
 }
 
 .skycon-expand:before, //deprecate me in-favour of bem style
 .skycon--expand:before{
-  content: "\E014";
+  content: "\E015";
 }
 
 .skycon-facebook:before, //deprecate me in-favour of bem style
 .skycon--facebook:before{
-  content: "\E015";
+  content: "\E016";
 }
 
 .skycon-gallery:before, //deprecate me in-favour of bem style
 .skycon--gallery:before{
-  content: "\E016";
+  content: "\E017";
 }
 
 .skycon-google-plus:before, //deprecate me in-favour of bem style
 .skycon--google-plus:before{
-  content: "\E017";
+  content: "\E018";
 }
 
 .skycon-home:before, //deprecate me in-favour of bem style
 .skycon--home:before{
-  content: "\E018";
+  content: "\E019";
 }
 
 .skycon-info:before, //deprecate me in-favour of bem style
 .skycon--info:before{
-  content: "\E019";
+  content: "\E01A";
 }
 
 .skycon-mail:before, //deprecate me in-favour of bem style
 .skycon--mail:before{
-  content: "\E01A";
+  content: "\E01B";
+}
+
+.skycon-mapmarker:before, //deprecate me in-favour of bem style
+.skycon--mapmarker:before{
+  content: "\E01C";
 }
 
 .skycon-menu:before, //deprecate me in-favour of bem style
 .skycon--menu:before{
-  content: "\E01B";
+  content: "\E01D";
 }
 
 .skycon-minify:before, //deprecate me in-favour of bem style
 .skycon--minify:before{
-  content: "\E01C";
+  content: "\E01E";
 }
 
 .skycon-mouse:before, //deprecate me in-favour of bem style
 .skycon--mouse:before{
-  content: "\E01D";
+  content: "\E01F";
 }
 
 .skycon-never-miss:before, //deprecate me in-favour of bem style
 .skycon--never-miss:before{
-  content: "\E01E";
+  content: "\E020";
+}
+
+.skycon-newmessage:before, //deprecate me in-favour of bem style
+.skycon--newmessage:before{
+  content: "\E021";
 }
 
 .skycon-on-demand:before, //deprecate me in-favour of bem style
 .skycon--on-demand:before{
-  content: "\E01F";
+  content: "\E022";
 }
 
 .skycon-pending:before, //deprecate me in-favour of bem style
 .skycon--pending:before{
-  content: "\E020";
+  content: "\E023";
 }
 
 .skycon-phone:before, //deprecate me in-favour of bem style
 .skycon--phone:before{
-  content: "\E021";
+  content: "\E024";
 }
 
 .skycon-plus-circle:before, //deprecate me in-favour of bem style
 .skycon--plus-circle:before{
-  content: "\E022";
+  content: "\E025";
 }
 
 .skycon-remote-download:before, //deprecate me in-favour of bem style
 .skycon--remote-download:before{
-  content: "\E023";
+  content: "\E026";
 }
 
 .skycon-remote-record:before, //deprecate me in-favour of bem style
 .skycon--remote-record:before{
-  content: "\E024";
+  content: "\E027";
 }
 
 .skycon-search:before, //deprecate me in-favour of bem style
 .skycon--search:before{
-  content: "\E025";
+  content: "\E028";
+}
+
+.skycon-seatplan:before, //deprecate me in-favour of bem style
+.skycon--seatplan:before{
+  content: "\E029";
 }
 
 .skycon-share:before, //deprecate me in-favour of bem style
 .skycon--share:before{
-  content: "\E026";
+  content: "\E02A";
 }
 
 .skycon-sky-go:before, //deprecate me in-favour of bem style
 .skycon--sky-go:before{
-  content: "\E027";
+  content: "\E02B";
 }
 
 .skycon-sky-plus:before, //deprecate me in-favour of bem style
 .skycon--sky-plus:before{
-  content: "\E028";
+  content: "\E02C";
 }
 
 .skycon-sky:before, //deprecate me in-favour of bem style
 .skycon--sky:before{
-  content: "\E029";
+  content: "\E02D";
 }
 
 .skycon-speech-bubble:before, //deprecate me in-favour of bem style
 .skycon--speech-bubble:before{
-  content: "\E02A";
+  content: "\E02E";
 }
 
 .skycon-stopwatch:before, //deprecate me in-favour of bem style
 .skycon--stopwatch:before{
-  content: "\E02B";
+  content: "\E02F";
 }
 
 .skycon-tick:before, //deprecate me in-favour of bem style
 .skycon--tick:before{
-  content: "\E02C";
+  content: "\E030";
 }
 
 .skycon-tv:before, //deprecate me in-favour of bem style
 .skycon--tv:before{
-  content: "\E02D";
+  content: "\E031";
 }
 
 .skycon-twitter-favourite:before, //deprecate me in-favour of bem style
 .skycon--twitter-favourite:before{
-  content: "\E02E";
+  content: "\E032";
 }
 
 .skycon-twitter-follow:before, //deprecate me in-favour of bem style
 .skycon--twitter-follow:before{
-  content: "\E02F";
+  content: "\E033";
 }
 
 .skycon-twitter-reply:before, //deprecate me in-favour of bem style
 .skycon--twitter-reply:before{
-  content: "\E030";
+  content: "\E034";
 }
 
 .skycon-twitter-retweet:before, //deprecate me in-favour of bem style
 .skycon--twitter-retweet:before{
-  content: "\E031";
+  content: "\E035";
 }
 
 .skycon-twitter:before, //deprecate me in-favour of bem style
 .skycon--twitter:before{
-  content: "\E032";
+  content: "\E036";
 }
 
 .skycon-user-profile:before, //deprecate me in-favour of bem style
 .skycon--user-profile:before{
-  content: "\E033";
+  content: "\E037";
 }
 
 .skycon-video-play:before, //deprecate me in-favour of bem style
 .skycon--video-play:before{
-  content: "\E034";
+  content: "\E038";
 }
 
 .skycon-volume:before, //deprecate me in-favour of bem style
 .skycon--volume:before{
-  content: "\E035";
+  content: "\E039";
 }
 
 .skycon-warning:before, //deprecate me in-favour of bem style
 .skycon--warning:before{
-  content: "\E036";
+  content: "\E03A";
 }
 
 .skycon-whatsapp:before, //deprecate me in-favour of bem style
 .skycon--whatsapp:before{
-  content: "\E037";
+  content: "\E03B";
 }

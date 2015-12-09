@@ -18,167 +18,179 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.skycon-arrow-down-left:before, .skycon--arrow-down-left:before {
+.skycon-alert:before, .skycon--alert:before {
   content: "\E001"; }
 
-.skycon-arrow-left:before, .skycon--arrow-left:before {
+.skycon-arrow-down-left:before, .skycon--arrow-down-left:before {
   content: "\E002"; }
 
-.skycon-arrow-right:before, .skycon--arrow-right:before {
+.skycon-arrow-left:before, .skycon--arrow-left:before {
   content: "\E003"; }
 
-.skycon-at:before, .skycon--at:before {
+.skycon-arrow-right:before, .skycon--arrow-right:before {
   content: "\E004"; }
 
-.skycon-calender:before, .skycon--calender:before {
+.skycon-at:before, .skycon--at:before {
   content: "\E005"; }
 
-.skycon-carousel-pause:before, .skycon--carousel-pause:before {
+.skycon-calender:before, .skycon--calender:before {
   content: "\E006"; }
 
-.skycon-carousel-play:before, .skycon--carousel-play:before {
+.skycon-carousel-pause:before, .skycon--carousel-pause:before {
   content: "\E007"; }
 
-.skycon-chevron-down:before, .skycon--chevron-down:before {
+.skycon-carousel-play:before, .skycon--carousel-play:before {
   content: "\E008"; }
 
-.skycon-chevron-left:before, .skycon--chevron-left:before {
+.skycon-chevron-down:before, .skycon--chevron-down:before {
   content: "\E009"; }
 
-.skycon-chevron-thin-down:before, .skycon--chevron-thin-down:before {
+.skycon-chevron-left:before, .skycon--chevron-left:before {
   content: "\E00A"; }
 
-.skycon-chevron-thin-left:before, .skycon--chevron-thin-left:before {
+.skycon-chevron-thin-down:before, .skycon--chevron-thin-down:before {
   content: "\E00B"; }
 
-.skycon-chevron-thin-up:before, .skycon--chevron-thin-up:before {
+.skycon-chevron-thin-left:before, .skycon--chevron-thin-left:before {
   content: "\E00C"; }
 
-.skycon-chevron-thin:before, .skycon--chevron-thin:before {
+.skycon-chevron-thin-up:before, .skycon--chevron-thin-up:before {
   content: "\E00D"; }
 
-.skycon-chevron-up:before, .skycon--chevron-up:before {
+.skycon-chevron-thin:before, .skycon--chevron-thin:before {
   content: "\E00E"; }
 
-.skycon-chevron:before, .skycon--chevron:before {
+.skycon-chevron-up:before, .skycon--chevron-up:before {
   content: "\E00F"; }
 
-.skycon-close:before, .skycon--close:before {
+.skycon-chevron:before, .skycon--chevron:before {
   content: "\E010"; }
 
-.skycon-cloud:before, .skycon--cloud:before {
+.skycon-close:before, .skycon--close:before {
   content: "\E011"; }
 
-.skycon-download:before, .skycon--download:before {
+.skycon-cloud:before, .skycon--cloud:before {
   content: "\E012"; }
 
-.skycon-edit:before, .skycon--edit:before {
+.skycon-download:before, .skycon--download:before {
   content: "\E013"; }
 
-.skycon-expand:before, .skycon--expand:before {
+.skycon-edit:before, .skycon--edit:before {
   content: "\E014"; }
 
-.skycon-facebook:before, .skycon--facebook:before {
+.skycon-expand:before, .skycon--expand:before {
   content: "\E015"; }
 
-.skycon-gallery:before, .skycon--gallery:before {
+.skycon-facebook:before, .skycon--facebook:before {
   content: "\E016"; }
 
-.skycon-google-plus:before, .skycon--google-plus:before {
+.skycon-gallery:before, .skycon--gallery:before {
   content: "\E017"; }
 
-.skycon-home:before, .skycon--home:before {
+.skycon-google-plus:before, .skycon--google-plus:before {
   content: "\E018"; }
 
-.skycon-info:before, .skycon--info:before {
+.skycon-home:before, .skycon--home:before {
   content: "\E019"; }
 
-.skycon-mail:before, .skycon--mail:before {
+.skycon-info:before, .skycon--info:before {
   content: "\E01A"; }
 
-.skycon-menu:before, .skycon--menu:before {
+.skycon-mail:before, .skycon--mail:before {
   content: "\E01B"; }
 
-.skycon-minify:before, .skycon--minify:before {
+.skycon-mapmarker:before, .skycon--mapmarker:before {
   content: "\E01C"; }
 
-.skycon-mouse:before, .skycon--mouse:before {
+.skycon-menu:before, .skycon--menu:before {
   content: "\E01D"; }
 
-.skycon-never-miss:before, .skycon--never-miss:before {
+.skycon-minify:before, .skycon--minify:before {
   content: "\E01E"; }
 
-.skycon-on-demand:before, .skycon--on-demand:before {
+.skycon-mouse:before, .skycon--mouse:before {
   content: "\E01F"; }
 
-.skycon-pending:before, .skycon--pending:before {
+.skycon-never-miss:before, .skycon--never-miss:before {
   content: "\E020"; }
 
-.skycon-phone:before, .skycon--phone:before {
+.skycon-newmessage:before, .skycon--newmessage:before {
   content: "\E021"; }
 
-.skycon-plus-circle:before, .skycon--plus-circle:before {
+.skycon-on-demand:before, .skycon--on-demand:before {
   content: "\E022"; }
 
-.skycon-remote-download:before, .skycon--remote-download:before {
+.skycon-pending:before, .skycon--pending:before {
   content: "\E023"; }
 
-.skycon-remote-record:before, .skycon--remote-record:before {
+.skycon-phone:before, .skycon--phone:before {
   content: "\E024"; }
 
-.skycon-search:before, .skycon--search:before {
+.skycon-plus-circle:before, .skycon--plus-circle:before {
   content: "\E025"; }
 
-.skycon-share:before, .skycon--share:before {
+.skycon-remote-download:before, .skycon--remote-download:before {
   content: "\E026"; }
 
-.skycon-sky-go:before, .skycon--sky-go:before {
+.skycon-remote-record:before, .skycon--remote-record:before {
   content: "\E027"; }
 
-.skycon-sky-plus:before, .skycon--sky-plus:before {
+.skycon-search:before, .skycon--search:before {
   content: "\E028"; }
 
-.skycon-sky:before, .skycon--sky:before {
+.skycon-seatplan:before, .skycon--seatplan:before {
   content: "\E029"; }
 
-.skycon-speech-bubble:before, .skycon--speech-bubble:before {
+.skycon-share:before, .skycon--share:before {
   content: "\E02A"; }
 
-.skycon-stopwatch:before, .skycon--stopwatch:before {
+.skycon-sky-go:before, .skycon--sky-go:before {
   content: "\E02B"; }
 
-.skycon-tick:before, .skycon--tick:before {
+.skycon-sky-plus:before, .skycon--sky-plus:before {
   content: "\E02C"; }
 
-.skycon-tv:before, .skycon--tv:before {
+.skycon-sky:before, .skycon--sky:before {
   content: "\E02D"; }
 
-.skycon-twitter-favourite:before, .skycon--twitter-favourite:before {
+.skycon-speech-bubble:before, .skycon--speech-bubble:before {
   content: "\E02E"; }
 
-.skycon-twitter-follow:before, .skycon--twitter-follow:before {
+.skycon-stopwatch:before, .skycon--stopwatch:before {
   content: "\E02F"; }
 
-.skycon-twitter-reply:before, .skycon--twitter-reply:before {
+.skycon-tick:before, .skycon--tick:before {
   content: "\E030"; }
 
-.skycon-twitter-retweet:before, .skycon--twitter-retweet:before {
+.skycon-tv:before, .skycon--tv:before {
   content: "\E031"; }
 
-.skycon-twitter:before, .skycon--twitter:before {
+.skycon-twitter-favourite:before, .skycon--twitter-favourite:before {
   content: "\E032"; }
 
-.skycon-user-profile:before, .skycon--user-profile:before {
+.skycon-twitter-follow:before, .skycon--twitter-follow:before {
   content: "\E033"; }
 
-.skycon-video-play:before, .skycon--video-play:before {
+.skycon-twitter-reply:before, .skycon--twitter-reply:before {
   content: "\E034"; }
 
-.skycon-volume:before, .skycon--volume:before {
+.skycon-twitter-retweet:before, .skycon--twitter-retweet:before {
   content: "\E035"; }
 
-.skycon-warning:before, .skycon--warning:before {
+.skycon-twitter:before, .skycon--twitter:before {
   content: "\E036"; }
 
-.skycon-whatsapp:before, .skycon--whatsapp:before {
+.skycon-user-profile:before, .skycon--user-profile:before {
   content: "\E037"; }
+
+.skycon-video-play:before, .skycon--video-play:before {
+  content: "\E038"; }
+
+.skycon-volume:before, .skycon--volume:before {
+  content: "\E039"; }
+
+.skycon-warning:before, .skycon--warning:before {
+  content: "\E03A"; }
+
+.skycon-whatsapp:before, .skycon--whatsapp:before {
+  content: "\E03B"; }
