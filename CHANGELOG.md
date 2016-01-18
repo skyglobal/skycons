@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.3.7
+
+  * Added medium thickness chevrons
+
+
 ## 0.3.6
 
   * Added thin chevrons
