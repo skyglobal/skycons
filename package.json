@@ -1,6 +1,6 @@
 {
   "name": "skycons",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Icons for Sky",
   "main": "index.js",
   "devDependencies": {

@@ -1,20 +1,20 @@
-[Skycons](http://skyglobal.github.io/skycons/) 
+[Skycons](http://skyglobal.github.io/skycons/)
 ========================
 
 > A collection of brand approved icons for use across Sky.com.  [Demo Page](http://skyglobal.github.io/skycons/)
 
 ## Quick-Start
 
-Include the Share assets in your project either as **Static Resources** 
+Include the Share assets in your project either as **Static Resources**
 
 with default colours:
 ```html
-<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.6/styles/skycons.min.css" />
+<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.7/styles/skycons.min.css" />
 ```
 
 without default colours:
 ```html
-<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.6/styles/skycons-core.min.css" />
+<link rel="stylesheet" href="http://web-toolkit.global.sky.com/components/skycons/0.3.7/styles/skycons-core.min.css" />
 ```
 
 or alternatively, **Via Bower**
