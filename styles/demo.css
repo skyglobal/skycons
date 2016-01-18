@@ -245,8 +245,7 @@ code {
 
 .demo-icons-table tr:hover i[class*="skycon-"] {
   -webkit-transform: scale(5);
-  -ms-transform: scale(5);
-      transform: scale(5);
+  transform: scale(5);
   overflow: visible;
   background: white; }
 
